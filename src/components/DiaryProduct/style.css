@@ -1,0 +1,7 @@
+.button__answer {
+  margin: 5px;
+}
+
+.button__answer--green {
+  background-color: green;
+}
