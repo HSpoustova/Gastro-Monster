@@ -3,11 +3,11 @@ export const dairyData = [
     question: 'Jaké přídatné látky se mohou přidávat do mléka',
     answer: [
       'Mohou se přidávat konzervanty pro delší trvanlivost.',
-      'Mohou se přidávat .',
-      'Krátkodobé zahřátí mléka, které způsobí zabití škodlivých mikroorganismů.',
-      'Proces, kterým se odstraňuje tuk z mléka.',
+      'Mohou se přidávat konzervatny a barviva pro udržení bílé barvy.',
+      'Nemohou se přidávat pouze zahušťovadla, ostatní přídatné látky jsou povolené.',
+      'Do mléka se žádné přídatné látky dávat nesmí.',
     ],
-    correctAnswer: 2,
+    correctAnswer: 3,
   },
 
   {
