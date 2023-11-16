@@ -228,6 +228,154 @@ export const bakeryData = [
 
 export const meatData = [
   { question: '', answer: ['', '', '', ''], correctAnswer: '' },
+
+  {
+    question: 'Co je to maso v tom nejširším slova smyslu?',
+    answer: [
+      'Svalovina živočichů vhodných k lidské spotřebě.',
+      'Svalovina a živočišné tuky z těl živočichů vhodných k lidské spotřebě',
+      'Všechy části těl živočichů, vč. ryb a bezobratlých, které se hodí k lidské spotřebě.',
+    ],
+    correctAnswer: 2,
+  },
+
+  {
+    question: 'Co je to mechanicky separované maso a kde se používá?',
+    answer: [
+      'Maso od kostí odděluje robot, který sekáčkem odděluje maso od kostí. Používá se do salámů.',
+      'Maso od kostí odděluje mechanicky řezník sekáčkem v řeznictví. Používá se zejména do salámů a do drůbežích mělněných výrobků.',
+      'Maso se od kostí mechanicky odděluje na jatkách. Používá se zejména do salámu a do drůbežích mělněných výrobků.',
+      'Maso a kosti se rozdrtí a masová pasta je pak vytlašována přes speciálně řešená síta, a tak oddělena od kostí.Používá se zejména do salámu a do drůbežích mělněných výrobků.',
+    ],
+    correctAnswer: 3,
+  },
+
+  {
+    question: 'Co je to "maso pro výsek"?',
+    answer: [
+      'Je to maso určené k likvidaci.',
+      'Je to maso získané rozdělělením jatečně upravených těl zvířat rozdělených na menší části určené pro prodej v obchodech, např. kotleta, plecko, kýta, žebra apod.',
+      'Maso, které si nechávají řezníci a prodávají jej pod pultem.',
+      'Je to maso, které je určené výhradně pro zpracování ve výrobě.',
+    ],
+    correctAnswer: 1,
+  },
+
+  {
+    question: 'Jaký druh masa je nejčastěji používán při výrobě salámů?',
+    answer: ['Kuřecí', 'Vepřové', 'Hovězí', 'Jehněčí'],
+    correctAnswer: 1,
+  },
+
+  {
+    question: 'Co je to tlačenka?',
+    answer: [
+      'Tlačenka je tradiční masný výrobek připravovaný ze vepřového masa a želatiny.',
+      'Tlačenka je masný výrobek, který obsahuje pouze maso, které bylo protlačeno sítem.',
+      'Tlačenka je tradiční masný výrobek, který prochází fází tzv. stlačování masa.',
+      'Tlačenka není masný výrobek.',
+    ],
+    correctAnswer: 0,
+  },
+
+  {
+    question:
+      'Co to jsou fermentované trvanlivé salámy a jaké výrobky do nich patří?',
+    answer: [
+      'Tento druh salámů se nyní již nevyrábí.',
+      'Salámy vyrobené fermentací masa pomocí bakterií, které přeměňují cukry na kyselinu mléčnou (dojde k okyselení) díky čemuž si zachovávají svou trvanlivost. Patří sem poličan, uherský salám, lovecký salám nebo herkules',
+      'Jsou to salámy, které prošly fází namáční v alkoholu. Patří sem poličan, uherský salám, lovecký salám nebo herkules',
+    ],
+    correctAnswer: 1,
+  },
+
+  {
+    question: 'Kde se porážejí zvířata?',
+    answer: [
+      'Na jatkách',
+      'Kdekoliv.',
+      'U řezníka v řeznictví',
+      'U majitele zvířete na zahradě.',
+    ],
+    correctAnswer: 0,
+  },
+
+  {
+    question:
+      'Jak se nazývá proces při výrobě masných výrobků, při kterém dochází k odpařování vody z povrchu výrobků a tím ke zvýšení jeho trvanlivosti?',
+    answer: ['Uzení.', 'Smažení.', 'Sušení.', 'Zrání.'],
+    correctAnswer: 2,
+  },
+
+  {
+    question:
+      'Jak se nazývá proces při výrobě masných výrobků, při kterém se přídavá sůl nebo solící směsi?',
+    answer: ['Chloridace.', 'Slazení.', 'Okyselování.', 'Solení.'],
+    correctAnswer: 3,
+  },
+
+  {
+    question:
+      'Jak se nazývá proces při výrobě masných výrobků, při kterém dochází k opracování díky dosažení vysokých teplot?',
+    answer: [
+      'Teplotní opracování.',
+      'Tepelné opracování.',
+      'Teplé zpracování.',
+      'Teplotí zpracování.',
+    ],
+    correctAnswer: 1,
+  },
+
+  {
+    question:
+      'Jak se nazývá proces při výrobě masných výrobků, při kterém jsou výrobky plněny do vhodných technologických obalů, které jim dodávají tvar a velikost?',
+    answer: [
+      'Balení',
+      'Narážení a tvarování.',
+      'Tvarování a balení.',
+      'Narážení a obalování',
+    ],
+    correctAnswer: 1,
+  },
+
+  {
+    question: 'Co je to jitrnice?',
+    answer: [
+      'Masný výrobek, který se vyrábí zejména z tučného vepřového masa, máčených housek, koření a vývaru.',
+      'Masný výrobek, který se vyrábí zejména z jater, tučného vepřového masa, plic, máčených housek, koření a vývaru.',
+      'Masný výrobek, který se vyrábí zejména z tučného vepřového masa, máčených housek, koření a vývaru.',
+    ],
+    correctAnswer: 1,
+  },
+
+  {
+    question: 'Který masný výrobek se tradičně spojuje s táborákem?',
+    answer: ['Špekáčky', 'Sekaná', 'Tlačenka', 'Jelita'],
+    correctAnswer: 0,
+  },
+
+  {
+    question: 'Co to jsou droby?',
+    answer: [
+      'Jsou to malé kousky masa, které jsou tvarovány do kuliček.',
+      'Jsou to malé zbytky poživatelných i nepoživatelných částí zvířete.',
+      'Jsou to poživatelné části zvířete, které se nepočítají k masu, např. játra, srdce, jazyk, ledviny apod.',
+      'Jsou to zbytky částí zvířat, které nejsou poživatelné.',
+    ],
+    correctAnswer: 2,
+  },
+
+  {
+    question:
+      'Jak se nazývají procesy při výrobě masných výrobků, při kterém dochází k řezání masa a promíchávání s dalšími surovinami?',
+    answer: [
+      'Řezání a zamíchání',
+      'Řezání a smíchání.',
+      'Mělnění a zamíchání.',
+      'Mělnění a míchání',
+    ],
+    correctAnswer: 3,
+  },
 ];
 
 export const fruitVegData = [

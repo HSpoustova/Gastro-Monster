@@ -9,7 +9,7 @@ export const DairySetQuestion = () => {
   for (let i = 0; i < dairyData.length; i++) {
     questionIndex.push(i);
   }
-  //vytvori polůe o 15 nahodnych neopakujicich se indexu
+  //vytvori pole o 15 nahodnych neopakujicich se indexu
   let buildSet = [];
   for (let i = 0; i < 15; i++) {
     buildSet.push(GetRandomObject(questionIndex));
@@ -39,7 +39,6 @@ export const DairySetQuestion = () => {
 
   //probehne overeni, zda vyhral nebo prohral status znaci spravnou nebo spatnou odpoved, aby nedoslo k mylnemu vyhodnoceni
   const checkGameOver = (status) => {
-    console.log(questionSet);
     if (status && correctAnswers === 9) {
       alert('Vyhrál jsi!');
       location.reload();
