@@ -1,5 +1,5 @@
 import './style.css';
-import { DairySetQuestion } from '../../components/DairySetQuestion';
+import { SetQuestion } from '../../components/SetQuestion';
 
 export const HomePage = () => {
   return (
@@ -8,7 +8,7 @@ export const HomePage = () => {
         <h1>Gastro monster kvíz</h1>
       </header>
       <div className="container">
-        <DairySetQuestion />
+        <SetQuestion />
       </div>
     </>
   );
