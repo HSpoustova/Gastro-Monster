@@ -1,13 +1,13 @@
 import './style.css';
-import { Link } from 'react-router-dom';
+import { SetQuestion } from '../../components/SetQuestion';
 import { Header } from '../../components/Header';
 
-export const HomePage = () => {
+export const Quiz = () => {
   return (
     <>
-      <Header />
+      <Header/>
       <div className="container">
-        <Link to="/fieldPick">Hrát</Link>
+        <SetQuestion />
       </div>
     </>
   );

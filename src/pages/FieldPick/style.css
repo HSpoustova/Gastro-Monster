@@ -1,0 +1,105 @@
+.container {
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(145, 189, 145);
+}
+
+.circle {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2px;
+  width: 404px;
+  height: 404px;
+}
+
+.slice {
+  position: relative; /* pro pozicionování textu */
+  width: 200px;
+  height: 200px;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: inset 0 0 10px #000000;
+}
+
+.slice-text {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s, visibility 0s linear 0.5s;
+  transform: translateY(-50%);
+  white-space: nowrap; /* Text na jedné řádce */
+}
+
+/* Text pro slice1 a slice3 vyjíždí doleva */
+.slice1 .slice-text, .slice3 .slice-text {
+  right: 100%; /* Text je umístěný vpravo od sekce */
+}
+
+/* Text pro slice2 a slice4 vyjíždí doprava */
+.slice2 .slice-text, .slice4 .slice-text {
+  left: 100%; /* Text je umístěný vlevo od sekce */
+}
+.slice1 .slice-text, .slice2 .slice-text {
+  top: 20%;
+}
+.slice3 .slice-text, .slice4 .slice-text {
+  bottom: 20%;
+}
+.slice:hover .slice-text {
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0s;
+}
+.slice1 {
+  background-image: url(./img/meat.png);
+  background-size: contain;
+  border-radius: 100% 0 0 0;
+  padding-top: 30px;
+  padding-left: 30px;
+}
+
+.slice2 {
+  background-image: url(./img/milk.png);
+  background-size: contain;
+  border-radius: 0 100% 0 0;
+  padding-top: 30px;
+  padding-right: 30px;
+}
+
+.slice3 {
+  background-image: url(./img/fruit.png);
+  background-size: 100%;
+  border-radius: 0 0 0 100%;
+  padding-bottom: 30px;
+  padding-left: 30px;
+}
+
+.slice4 {
+  background-image: url(./img/vegetables.png);
+  background-size: contain;
+  border-radius: 0 0 100% 0;
+  padding-bottom: 30px;
+  padding-right: 30px;
+}
+
+.maskot {
+  position: fixed;
+  right: -30%;
+  bottom: 22%;
+  transition: right 1s ease-in-out;
+}
+
+.maskot-pic {
+  width: 200px;
+}
+
+.maskot.active {
+  right: 360px;
+}
