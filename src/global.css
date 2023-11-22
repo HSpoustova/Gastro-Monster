@@ -8,9 +8,13 @@ html {
   font-family: 'VT323', monospace;
   font-size: 30px;
 }
+body {
+  background-image: url(./pages/FieldPick/img/backdrop.jpg);
+  background-size: cover;
 
+}
 .container {
-  max-width: 50%;
+  max-width: 60%;
   margin-right: auto;
   margin-left: auto;
 }
