@@ -10,14 +10,17 @@
 .circle {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  width: 400px;
-  height: 400px;
+  grid-template-rows: repeat(2, 1fr);
+  max-width: 400px;
   position: relative;
   background-image: url(./img/plate.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .slice {
-  position: relative; 
+  position: relative;
   width: 200px;
   height: 200px;
   background-color: transparent;
@@ -26,41 +29,52 @@
   align-items: center;
   text-align: center;
 }
+
 .slice:hover {
   background-color: rgba(182, 157, 123, 0.732);
 }
+
 .slice-text {
   position: absolute;
   visibility: hidden;
   opacity: 0;
   transition: opacity 0.5s, visibility 0s linear 0.5s;
   transform: translateY(-50%);
-  white-space: nowrap; 
+  white-space: nowrap;
 }
 
 
-.slice1 .slice-text, .slice3 .slice-text {
+.slice1 .slice-text,
+.slice3 .slice-text {
   right: 100%;
 }
 
-.slice2 .slice-text, .slice4 .slice-text {
-  left: 100%; 
+.slice2 .slice-text,
+.slice4 .slice-text {
+  left: 100%;
 }
-.slice1 .slice-text, .slice2 .slice-text {
+
+.slice1 .slice-text,
+.slice2 .slice-text {
   top: 20%;
 }
-.slice3 .slice-text, .slice4 .slice-text {
+
+.slice3 .slice-text,
+.slice4 .slice-text {
   bottom: 20%;
 }
+
 .slice:hover .slice-text {
   visibility: visible;
   opacity: 1;
   transition-delay: 0s;
 }
+
 .slice1 {
   border-radius: 100% 0 0 0;
   padding-top: 30px;
   padding-left: 30px;
+
 }
 
 .slice2 {
@@ -73,6 +87,7 @@
   border-radius: 0 0 0 100%;
   padding-bottom: 30px;
   padding-left: 30px;
+
 }
 
 .slice4 {

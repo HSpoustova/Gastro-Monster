@@ -1,8 +1,7 @@
 import { useEffect, useState } from 'react';
-import { dairyData } from './Data';
 import { GetRandomObject } from './GetRandomObject';
 
-export const useEvaluationHook = (questionSet) => {
+export const useEvaluationHook = (questionSet, array) => {
   const [questionData, setQuestionData] = useState({
     question: '',
     answer: [''],
@@ -34,7 +33,7 @@ export const useEvaluationHook = (questionSet) => {
   };
   //obnoveni nove otazky
   const updateQuestionData = () => {
-    setQuestionData(dairyData[GetRandomObject(questionSet)]);
+    setQuestionData(array[GetRandomObject(questionSet)]);
   };
 
   /* Hook obdrzi index, 
