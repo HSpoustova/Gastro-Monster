@@ -21,11 +21,11 @@ export const useEvaluationHook = (questionSet, array) => {
 
   //definovani funkce, zda vyhral (musi byt definovano, nez pouzijeme), vraci true false
   const checkHasWon = () => {
-    return correctAnswers >= 10;
+    return correctAnswers >= 9;
   };
   //definovani podminky, zda prohral (musi byt definovano, nez pouzijeme) vraci true nebo false
   const checkHasLost = () => {
-    let extraFood = food - (10 - correctAnswers);
+    let extraFood = food - (10 - correctAnswers) - 1;
     if (extraFood >= 0) {
       return false;
     }
@@ -52,10 +52,10 @@ export const useEvaluationHook = (questionSet, array) => {
     setFood(food - 1);
     if (status) {
       setCorrectAnswers(correctAnswers + 1);
-    }
-    if (checkHasWon()) {
-      alert('Vyhral jsi');
-      window.location.reload();
+      if (checkHasWon()) {
+        alert('Vyhral jsi');
+        window.location.reload();
+      }
     } else if (checkHasLost()) {
       alert('Nemas dostatecny pocet potravin.Prohral jsi');
       window.location.reload();
