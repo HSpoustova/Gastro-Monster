@@ -333,6 +333,182 @@ export const bakeryData = [
     ],
     correctAnswer: 0,
   },
+
+  {
+    question: 'Jaké jsou hlavní suroviny pro výrobu pekárenských výrobků?',
+    answer: [
+      'Mouka, voda, sůl, droždí.',
+      'Mouka, voda, sůl, tuk, droždí.',
+      'Mouka, voda, sůl, kypřící prášek',
+      'Mouka, voda, sůl, máslo, droždí.',
+    ],
+    correctAnswer: 0,
+  },
+
+  {
+    question: 'Jaké jsou hlavní suroviny pro výrobu pekárenských výrobků?',
+    answer: [
+      'Mouka, voda, sůl, droždí.',
+      'Mouka, voda, sůl, tuk, droždí.',
+      'Mouka, voda, sůl, kypřící prášek',
+      'Mouka, voda, sůl, máslo, droždí.',
+    ],
+    correctAnswer: 0,
+  },
+
+  {
+    question: 'Jaké jsou hlavní suroviny pro výrobu pekárenských výrobků?',
+    answer: [
+      'Mouka, voda, sůl, droždí.',
+      'Mouka, voda, sůl, tuk, droždí.',
+      'Mouka, voda, sůl, kypřící prášek',
+      'Mouka, voda, sůl, máslo, droždí.',
+    ],
+    correctAnswer: 0,
+  },
+
+  {
+    question: 'Jaké jsou hlavní suroviny pro výrobu pekárenských výrobků?',
+    answer: [
+      'Mouka, voda, sůl, droždí.',
+      'Mouka, voda, sůl, tuk, droždí.',
+      'Mouka, voda, sůl, kypřící prášek',
+      'Mouka, voda, sůl, máslo, droždí.',
+    ],
+    correctAnswer: 0,
+  },
+
+  {
+    question: 'Jaké jsou hlavní suroviny pro výrobu pekárenských výrobků?',
+    answer: [
+      'Mouka, voda, sůl, droždí.',
+      'Mouka, voda, sůl, tuk, droždí.',
+      'Mouka, voda, sůl, kypřící prášek',
+      'Mouka, voda, sůl, máslo, droždí.',
+    ],
+    correctAnswer: 0,
+  },
+
+  {
+    question: 'Jaké jsou hlavní suroviny pro výrobu pekárenských výrobků?',
+    answer: [
+      'Mouka, voda, sůl, droždí.',
+      'Mouka, voda, sůl, tuk, droždí.',
+      'Mouka, voda, sůl, kypřící prášek',
+      'Mouka, voda, sůl, máslo, droždí.',
+    ],
+    correctAnswer: 0,
+  },
+
+  {
+    question: 'Jaké jsou hlavní suroviny pro výrobu pekárenských výrobků?',
+    answer: [
+      'Mouka, voda, sůl, droždí.',
+      'Mouka, voda, sůl, tuk, droždí.',
+      'Mouka, voda, sůl, kypřící prášek',
+      'Mouka, voda, sůl, máslo, droždí.',
+    ],
+    correctAnswer: 0,
+  },
+
+  {
+    question: 'Jaké jsou hlavní suroviny pro výrobu pekárenských výrobků?',
+    answer: [
+      'Mouka, voda, sůl, droždí.',
+      'Mouka, voda, sůl, tuk, droždí.',
+      'Mouka, voda, sůl, kypřící prášek',
+      'Mouka, voda, sůl, máslo, droždí.',
+    ],
+    correctAnswer: 0,
+  },
+
+  {
+    question: 'Jaké jsou hlavní suroviny pro výrobu pekárenských výrobků?',
+    answer: [
+      'Mouka, voda, sůl, droždí.',
+      'Mouka, voda, sůl, tuk, droždí.',
+      'Mouka, voda, sůl, kypřící prášek',
+      'Mouka, voda, sůl, máslo, droždí.',
+    ],
+    correctAnswer: 0,
+  },
+
+  {
+    question: 'Jaké jsou hlavní suroviny pro výrobu pekárenských výrobků?',
+    answer: [
+      'Mouka, voda, sůl, droždí.',
+      'Mouka, voda, sůl, tuk, droždí.',
+      'Mouka, voda, sůl, kypřící prášek',
+      'Mouka, voda, sůl, máslo, droždí.',
+    ],
+    correctAnswer: 0,
+  },
+
+  {
+    question: 'Jaké jsou hlavní suroviny pro výrobu pekárenských výrobků?',
+    answer: [
+      'Mouka, voda, sůl, droždí.',
+      'Mouka, voda, sůl, tuk, droždí.',
+      'Mouka, voda, sůl, kypřící prášek',
+      'Mouka, voda, sůl, máslo, droždí.',
+    ],
+    correctAnswer: 0,
+  },
+
+  {
+    question: 'Jaké jsou hlavní suroviny pro výrobu pekárenských výrobků?',
+    answer: [
+      'Mouka, voda, sůl, droždí.',
+      'Mouka, voda, sůl, tuk, droždí.',
+      'Mouka, voda, sůl, kypřící prášek',
+      'Mouka, voda, sůl, máslo, droždí.',
+    ],
+    correctAnswer: 0,
+  },
+
+  {
+    question: 'Jaké jsou hlavní suroviny pro výrobu pekárenských výrobků?',
+    answer: [
+      'Mouka, voda, sůl, droždí.',
+      'Mouka, voda, sůl, tuk, droždí.',
+      'Mouka, voda, sůl, kypřící prášek',
+      'Mouka, voda, sůl, máslo, droždí.',
+    ],
+    correctAnswer: 0,
+  },
+
+  {
+    question: 'Jaké jsou hlavní suroviny pro výrobu pekárenských výrobků?',
+    answer: [
+      'Mouka, voda, sůl, droždí.',
+      'Mouka, voda, sůl, tuk, droždí.',
+      'Mouka, voda, sůl, kypřící prášek',
+      'Mouka, voda, sůl, máslo, droždí.',
+    ],
+    correctAnswer: 0,
+  },
+
+  {
+    question: 'Jaké jsou hlavní suroviny pro výrobu pekárenských výrobků?',
+    answer: [
+      'Mouka, voda, sůl, droždí.',
+      'Mouka, voda, sůl, tuk, droždí.',
+      'Mouka, voda, sůl, kypřící prášek',
+      'Mouka, voda, sůl, máslo, droždí.',
+    ],
+    correctAnswer: 0,
+  },
+
+  {
+    question: 'Jaké jsou hlavní suroviny pro výrobu pekárenských výrobků?',
+    answer: [
+      'Mouka, voda, sůl, droždí.',
+      'Mouka, voda, sůl, tuk, droždí.',
+      'Mouka, voda, sůl, kypřící prášek',
+      'Mouka, voda, sůl, máslo, droždí.',
+    ],
+    correctAnswer: 0,
+  },
 ];
 
 export const meatData = [

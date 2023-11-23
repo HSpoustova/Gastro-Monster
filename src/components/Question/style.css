@@ -1,8 +1,9 @@
 .button__answer {
   margin: 5px;
   background-color: rgb(199, 228, 218);
-  border-radius: 20px;
   padding: 7px;
+  font-family: 'Pixelify Sans', sans-serif;
+
 }
 
 .button__answer--green {

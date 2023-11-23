@@ -1,13 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
+
 * {
   box-sizing: border-box;
 }
 
 html {
   font-family: 'VT323', monospace;
-  font-size: 30px;
+  height: 100%;
+  background-attachment: fixed;
+  overflow: hidden;
+
 }
+
 body {
   background-image: url(./pages/FieldPick/img/backdrop.jpg);
   background-size: cover;
@@ -20,9 +25,12 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 .container {
   max-width: 60%;
   margin-top: 20px;
   margin-right: auto;
   margin-left: auto;
+  padding-right: 1rem;
+  padding-left: 1rem;
 }

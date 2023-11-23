@@ -13,16 +13,16 @@ export const FieldPick = () => {
       <div className="container-fieldPick">
         <h2>Ahoj, vyber si oblast!</h2>
         <div className="circle">
-          <Link to="/quiz" className="slice slice1">
+          <Link to="/quiz/milk" className="slice slice1">
             <span className="slice-text">Mléko</span>
           </Link>
-          <Link to="/quiz" className="slice slice2">
+          <Link to="/quiz/meat" className="slice slice2">
             <span className="slice-text">Maso</span>
           </Link>
           <Link to="/quiz" className="slice slice3">
             <span className="slice-text">Ovoce<br/>Zelenina</span>
           </Link>
-          <Link to="/quiz" className="slice slice4">
+          <Link to="/quiz/bakery" className="slice slice4">
             <span className="slice-text">Pečivo</span>
           </Link>
         </div>

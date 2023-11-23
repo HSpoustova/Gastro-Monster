@@ -1,11 +1,12 @@
 import { useState } from 'react';
-import { dairyData } from '../Data';
 import { Question } from '../Question';
 import { useQuestionHook } from '../useQuestionHook';
 import { useEvaluationHook } from '../useEvaluationHook';
 
-export const SetQuestion = () => {
-  const [questionSet, setQuestionSet] = useQuestionHook(dairyData);
+export const SetQuestion = ({ array }) => {
+
+
+  const [questionSet, setQuestionSet] = useQuestionHook(array);
 
   const [
     food,
@@ -15,7 +16,7 @@ export const SetQuestion = () => {
     questionData,
     correctAnswers,
     answeredQuestion,
-  ] = useEvaluationHook(questionSet);
+  ] = useEvaluationHook(questionSet, array);
 
   const selectedAnswer = (selectedAnswerIndex) => {
     if (selectedAnswerIndex === questionData.correctAnswer) {

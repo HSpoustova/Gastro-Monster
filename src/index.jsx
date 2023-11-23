@@ -15,7 +15,7 @@ const router = createBrowserRouter([
     path: 'fieldPick',
     element: <FieldPick />,
   },
-  { path: 'quiz', element: <Quiz /> },
+  { path: 'quiz/:setData', element: <Quiz /> },
 ]);
 
 createRoot(document.querySelector('#app')).render(
