@@ -5,7 +5,10 @@ import './style.css';
 import maskotAdultNeutral from './img/maskot-adult-neutral.png';
 
 export const FieldPick = () => {
-  const { isVisible, isTextVisible, text, maskotRef, textRef } = useMaskot({ delay: 500, textProp: "Mám hlad!" });
+  const { isVisible, isTextVisible, text, maskotRef, textRef } = useMaskot({
+    delay: 500,
+    textProp: 'Mám hlad!',
+  });
 
   return (
     <>
@@ -19,8 +22,12 @@ export const FieldPick = () => {
           <Link to="/quiz/meat" className="slice slice2">
             <span className="slice-text">Maso</span>
           </Link>
-          <Link to="/quiz" className="slice slice3">
-            <span className="slice-text">Ovoce<br/>Zelenina</span>
+          <Link to="/quiz/fruitveg" className="slice slice3">
+            <span className="slice-text">
+              Ovoce
+              <br />
+              Zelenina
+            </span>
           </Link>
           <Link to="/quiz/bakery" className="slice slice4">
             <span className="slice-text">Pečivo</span>
@@ -32,7 +39,10 @@ export const FieldPick = () => {
               {text}
             </div>
           )}
-          <div ref={maskotRef} className={`maskot ${isVisible ? 'active' : ''}`}>
+          <div
+            ref={maskotRef}
+            className={`maskot ${isVisible ? 'active' : ''}`}
+          >
             <img className="maskot-pic" src={maskotAdultNeutral} alt="Maskot" />
           </div>
         </div>

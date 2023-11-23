@@ -328,32 +328,32 @@ export const bakeryData = [
     answer: [
       'Mouka, voda, sůl, droždí.',
       'Mouka, voda, sůl, tuk, droždí.',
-      'Mouka, voda, sůl, kypřící prášek',
+      'Mouka, voda, sůl, vejce, kypřící prášek',
       'Mouka, voda, sůl, máslo, droždí.',
     ],
     correctAnswer: 0,
   },
 
   {
-    question: 'Jaké jsou hlavní suroviny pro výrobu pekárenských výrobků?',
+    question: 'Proč je důležité mít při výběru pečiva igelitové rukavice?',
     answer: [
-      'Mouka, voda, sůl, droždí.',
-      'Mouka, voda, sůl, tuk, droždí.',
-      'Mouka, voda, sůl, kypřící prášek',
-      'Mouka, voda, sůl, máslo, droždí.',
+      'Je to modní.',
+      'Zabraňují to přenosu nečistot a bakterii na pečivo.',
+      'Zabraňují ušpinění rukou',
+      'Všechny možnosti.',
     ],
-    correctAnswer: 0,
+    correctAnswer: 1,
   },
 
   {
-    question: 'Jaké jsou hlavní suroviny pro výrobu pekárenských výrobků?',
+    question: 'Jaké jsou hlavní suroviny pro výrobu piškotů?',
     answer: [
-      'Mouka, voda, sůl, droždí.',
-      'Mouka, voda, sůl, tuk, droždí.',
+      'Mouka, voda, cukr, tuk',
       'Mouka, voda, sůl, kypřící prášek',
-      'Mouka, voda, sůl, máslo, droždí.',
+      'Mouka, vejce, cukr.',
+      'Mouka, voda, cukr máslo.',
     ],
-    correctAnswer: 0,
+    correctAnswer: 2,
   },
 
   {
