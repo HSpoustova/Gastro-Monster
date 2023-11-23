@@ -11,10 +11,18 @@ html {
 body {
   background-image: url(./pages/FieldPick/img/backdrop.jpg);
   background-size: cover;
-
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+#app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .container {
   max-width: 60%;
+  margin-top: 20px;
   margin-right: auto;
   margin-left: auto;
 }

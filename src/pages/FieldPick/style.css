@@ -1,10 +1,14 @@
-.container {
-  margin-top: 10vh;
+.container-fieldPick {
+  width: 900px;
+  height: 600px;
+  padding-top: 40px;
+  margin-top: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   background-color: rgb(255, 223, 163);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
 .circle {
@@ -32,10 +36,12 @@
 .slice-text {
   position: absolute;
   visibility: hidden;
+  padding-bottom: 10px;
   opacity: 0;
-  transition: opacity 0.5s, visibility 0s linear 0.5s;
-  transform: translateY(-50%);
   white-space: nowrap; 
+  color: black;
+  line-height: 0.7;
+  padding-top: 2px;
 }
 
 
@@ -56,6 +62,14 @@
   visibility: visible;
   opacity: 1;
   transition-delay: 0s;
+  background-image: url('./img/nav.png'); 
+  background-size: cover; 
+  background-position: center; 
+  width: 200px;
+  height: 100px; 
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
 }
 .slice1 {
   border-radius: 100% 0 0 0;
@@ -85,7 +99,6 @@
   position: fixed;
   right: -30%;
   bottom: 0%;
-
   transition: right 1s ease-in-out;
 }
 
@@ -94,5 +107,19 @@
 }
 
 .maskot.active {
-  right: 120px;
+  right: 1px;
+}
+.maskot-text-bubble {
+  width: 200px;
+  height: 190px;
+  background-image: url('./img/textBubble.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: fixed;
+  right: 150px; /* nebo odpovídající hodnota, aby byla bublina vpravo */
+  bottom: 60%;
+  display: flex;
+  justify-content: center; 
+  align-items: flex-start;
+  padding-top: 30px;
 }

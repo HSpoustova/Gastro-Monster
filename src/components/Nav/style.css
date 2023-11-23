@@ -1,0 +1,21 @@
+.nav-background {
+  background-image: url('./img/nav.png'); 
+  background-size: cover; 
+  background-position: center; 
+  width: 200px;
+  height: 100px; 
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  color: rgb(6, 6, 6); 
+}
+.nav-link {
+  padding-bottom: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.nav-background:hover {
+  opacity: 70%;
+}
+

@@ -1,5 +1,5 @@
-export const Header = () => {
-  <header>
-    <h1>Gastro monster kvíz</h1>
-  </header>;
-};
+import './style.css'
+export const Header = ({ text }) => {
+  return (
+  <h1 className="header">{text}</h1>
+)};
