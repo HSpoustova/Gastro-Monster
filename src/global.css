@@ -7,6 +7,9 @@
 
 html {
   font-family: 'VT323', monospace;
+  height: 100%;
+  background-attachment: fixed;
+  overflow: hidden;
 
 }
 
