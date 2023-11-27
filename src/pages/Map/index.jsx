@@ -31,7 +31,7 @@ export const Map = () => {
   };
 
   return (
-    <div className="container">
+    <div className="map-container">
       {buttons.map((buttonMap) => {
         return (
           <div key={buttonMap.id}>

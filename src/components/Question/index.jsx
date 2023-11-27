@@ -2,16 +2,11 @@ import './style.css';
 
 //zobrazuje tlacitko "dalsi" po kliknuti na jakoukoliv odpoved a da dalsi otazku, po odpovedi zablokuje moznost znovu kliknout na odpoved
 const revealButton = (answered, newQuestion) => {
-  if (answered === true) {
-    return (
-      <div>
-        <button onClick={() => newQuestion(false)} className="button__answer">
-          Další
-        </button>
-      </div>
-    );
-  }
-  return null;
+  return answered ? (
+    <div onClick={() => newQuestion(false)} className="button__answer">
+      Další
+    </div>
+  ) : null;
 };
 
 //popuziva jako props
@@ -25,29 +20,25 @@ export const Question = ({
 }) => {
   return (
     <>
-      <div>
-        <div>Pocet potravin: {food}</div>
+      <div className="quizContainer">
+        {/* <div>Pocet potravin: {food}</div>
         <div>Pocet zbyvajicich policek: {10 - correctAnswers}</div>
-        <div>Spravnych odpovedi: {correctAnswers}</div>
-        <h2>{questionData.question}</h2>
-        <div className='buttons'>
-        {questionData.answer.map((answer, index) => (
-          <div key={index}>
+        <div>Spravnych odpovedi: {correctAnswers}</div> */}
+        <h2 className="question">{questionData.question}</h2>
+        <div className="buttons">
+          {questionData.answer.map((answer, index) => (
             <div
+              key={index}
               onClick={() => callback(index)}
               className="button__answer"
               disabled={answered}
             >
               {answer}
             </div>
-          </div>
-        ))}
+          ))}
+          {revealButton(answered, newQuestion)}
         </div>
       </div>
-
-      {revealButton(answered, newQuestion)}
     </>
   );
 };
-
-

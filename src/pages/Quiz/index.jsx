@@ -35,7 +35,6 @@ export const Quiz = () => {
         <Button text="Konec" to="/" backgroundImage={button} />
         <Button text="Zpět" to="/" backgroundImage={button} />
       </div>
-      <Header />
       <div className="container">
         <SetQuestion array={getData()} />
       </div>
