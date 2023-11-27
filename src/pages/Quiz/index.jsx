@@ -8,6 +8,8 @@ import {
   fruitVegData,
   meatData,
 } from '../../components/Data';
+import button from '../FieldPick/img/button.png'
+import { Button } from '../../components/Button';
 
 const getData = () => {
   const { setData } = useParams();
@@ -29,6 +31,10 @@ const getData = () => {
 export const Quiz = () => {
   return (
     <>
+     <div className="navButtons">
+        <Button text="Konec" to="/" backgroundImage={button} />
+        <Button text="Zpět" to="/" backgroundImage={button} />
+      </div>
       <Header />
       <div className="container">
         <SetQuestion array={getData()} />

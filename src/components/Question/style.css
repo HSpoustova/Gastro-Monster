@@ -1,11 +1,16 @@
 .button__answer {
-  margin: 5px;
-  background-color: rgb(199, 228, 218);
-  padding: 7px;
-  font-family: 'Pixelify Sans', sans-serif;
-
+  display: flex;
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./img/answer.png);
+  width: 400px;
+  height: 100px;
+  white-space: nowrap;
+  overflow: hidden;
+  white-space: normal;
+  padding: 15px 30px 5px 30px
 }
-
 .button__answer--green {
   background-color: green;
 }

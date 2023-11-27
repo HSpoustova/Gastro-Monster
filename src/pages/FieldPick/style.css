@@ -1,3 +1,9 @@
+.navButtons {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+
 .container-fieldPick {
   width: 900px;
   height: 600px;
@@ -47,6 +53,7 @@
   color: black;
   line-height: 0.7;
   padding-top: 2px;
+  font-size: 1.8em;
 }
 
 
@@ -74,7 +81,7 @@
   visibility: visible;
   opacity: 1;
   transition-delay: 0s;
-  background-image: url('./img/nav.png'); 
+  background-image: url(./img/nav.png); 
   background-size: cover; 
   background-position: center; 
   width: 200px;
@@ -131,10 +138,11 @@
   background-repeat: no-repeat;
   background-size: contain;
   position: fixed;
-  right: 150px; /* nebo odpovídající hodnota, aby byla bublina vpravo */
+  right: 150px; 
   bottom: 60%;
   display: flex;
   justify-content: center; 
   align-items: flex-start;
   padding-top: 30px;
+  font-size: 2em;
 }

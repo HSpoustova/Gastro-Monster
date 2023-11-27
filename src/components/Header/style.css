@@ -1,8 +1,9 @@
-.header {
+.header-text {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 100px;
-  margin: 10px;
+  font-size: 2em;
+  margin: 10px 0 30px 0;
   color: rgb(73, 20, 20);
+
 }

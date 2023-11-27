@@ -3,6 +3,9 @@ import { Header } from '../../components/Header';
 import { useMaskot } from '../../components/useMaskot';
 import './style.css';
 import maskotAdultNeutral from './img/maskot-adult-neutral.png';
+import { Nav } from '../../components/Nav';
+import { Button } from '../../components/Button';
+import button from './img/button.png';
 
 export const FieldPick = () => {
   const { isVisible, isTextVisible, text, maskotRef, textRef } = useMaskot({
@@ -12,9 +15,11 @@ export const FieldPick = () => {
 
   return (
     <>
-      <Header />
+      <div className="navButtons">
+        <Button text="Konec" to="/" backgroundImage={button} />
+      </div>
       <div className="container-fieldPick">
-        <h2>Ahoj, vyber si oblast!</h2>
+        <Header text="Ahoj! Vyber si oblast" showPic={false} />
         <div className="circle">
           <Link to="/quiz/milk" className="slice slice1">
             <span className="slice-text">Mléko</span>

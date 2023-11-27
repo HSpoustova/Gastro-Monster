@@ -1,22 +1,21 @@
-
-.nav-background {
+.button-background {
   background-size: cover; 
   background-position: center; 
-  width: 200px;
-  height: 100px;
+  width: 120px;
+  height: 80px;
   display: flex;
   justify-content: center; 
   align-items: center; 
+  padding-top: 15px;
 
 }
-.nav-link {
+.button-link {
   font-size: 1.7em;
   padding-bottom: 10px;
   text-decoration: none;
   color: black;
 }
 
-.nav-background:hover {
+.button-background:hover {
   opacity: 70%;
 }
-

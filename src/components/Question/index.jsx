@@ -30,17 +30,19 @@ export const Question = ({
         <div>Pocet zbyvajicich policek: {10 - correctAnswers}</div>
         <div>Spravnych odpovedi: {correctAnswers}</div>
         <h2>{questionData.question}</h2>
+        <div className='buttons'>
         {questionData.answer.map((answer, index) => (
           <div key={index}>
-            <button
+            <div
               onClick={() => callback(index)}
               className="button__answer"
               disabled={answered}
             >
               {answer}
-            </button>
+            </div>
           </div>
         ))}
+        </div>
       </div>
 
       {revealButton(answered, newQuestion)}

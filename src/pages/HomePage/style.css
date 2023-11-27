@@ -2,6 +2,9 @@ h2 {
   padding-bottom: 40px;
   margin: 0;
 }
+.header {
+  width: 400px;
+}
 .container-homePage {
   border: 1px;
   width: 500px;
