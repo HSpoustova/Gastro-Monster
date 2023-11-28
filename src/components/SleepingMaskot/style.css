@@ -1,0 +1,22 @@
+
+.container-maskot {
+  position: relative;
+  width: 100vw;
+  height: 300px; 
+}
+
+.dragon-image {
+  position: absolute;
+  right: 50px;
+  bottom: 0;
+  height: 100%; 
+}
+
+.animated-letter {
+  position: absolute;
+  right: 10%; 
+  font-size: 4em;
+  font-weight: 800;
+  color: white; 
+  transition: bottom 0.5s ease; 
+}
