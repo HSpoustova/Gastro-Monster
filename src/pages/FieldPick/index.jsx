@@ -7,6 +7,7 @@ import { Nav } from '../../components/Nav';
 import { Button } from '../../components/Button';
 import button from './img/button.png';
 
+
 export const FieldPick = () => {
   const { isVisible, isTextVisible, text, maskotRef, textRef } = useMaskot({
     delay: 500,
@@ -19,7 +20,7 @@ export const FieldPick = () => {
         <Button text="Konec" to="/" backgroundImage={button} />
       </div>
       <div className="container-fieldPick">
-        <Header text="Ahoj! Vyber si oblast" showPic={false} />
+        <h1 className='pick-field-header'>Ahoj! Vyber si oblast</h1>
         <div className="circle">
           <Link to="/quiz/milk" className="slice slice1">
             <span className="slice-text">Mléko</span>
