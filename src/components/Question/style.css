@@ -14,6 +14,9 @@
 .button__answer--green {
   background-color: green;
 }
+.button__answer:hover {
+  opacity: 70%;
+}
 .question {
   display: flex;
   background-repeat: no-repeat;
