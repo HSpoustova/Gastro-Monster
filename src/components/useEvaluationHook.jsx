@@ -79,13 +79,6 @@ export const useEvaluationHook = (questionSet, array) => {
     }
   }, [answered]);
 
-  /*osetrit napovedy
-  const useHint = () => 
-  {
-    if (food >= 1 ) {
-    setFood(food - 1)
-  }}*/
-
   //vraci vyber hodnot, ktere budeme potrebovat jinde - poslat je do jinych komponent
   return [food, setAnswer, answered, setAnswered, questionData, correctAnswers];
 };

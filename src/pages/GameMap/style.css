@@ -1,0 +1,329 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container__maps {
+  width: 1092px
+}
+
+.milk-map {
+  aspect-ratio: 1092 / 819;
+  background-image: url("img/mapa1.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+
+
+}
+
+.milk-btn1 {
+  position: absolute;
+  left: 62.5%;
+  top: 7.15%;
+  transform: translate(-50%, -50%);
+}
+
+
+.milk-btn2 {
+  position: absolute;
+  left: 60.7%;
+  top: 16.6%;
+  transform: translate(-50%, -50%);
+}
+
+.milk-btn3 {
+  position: absolute;
+  left: 62.8%;
+  top: 31%;
+  transform: translate(-50%, -50%);
+}
+
+.milk-btn4 {
+  position: absolute;
+  left: 52.1%;
+  top: 39.2%;
+  transform: translate(-50%, -50%);
+}
+
+.milk-btn5 {
+  position: absolute;
+  left: 42%;
+  top: 46.5%;
+  transform: translate(-50%, -50%);
+}
+
+.milk-btn6 {
+  position: absolute;
+  left: 38.2%;
+  top: 59.3%;
+  transform: translate(-50%, -50%);
+}
+
+.milk-btn7 {
+  position: absolute;
+  left: 42.7%;
+  top: 66.9%;
+  transform: translate(-50%, -50%);
+}
+
+.milk-btn8 {
+  position: absolute;
+  left: 46.7%;
+  top: 75.3%;
+  transform: translate(-50%, -50%);
+}
+
+.milk-btn9 {
+  position: absolute;
+  left: 50.2%;
+  top: 83.5%;
+  transform: translate(-50%, -50%);
+}
+
+.milk-btn10 {
+  position: absolute;
+  left: 44.7%;
+  top: 95.3%;
+  transform: translate(-50%, -50%);
+}
+
+.meat-map {
+  aspect-ratio: 1092 / 819;
+  background-image: url("img/mapa2.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+}
+
+.meat-btn1 {
+  position: absolute;
+  left: 39.4%;
+  top: 10.1%;
+  transform: translate(-50%, -50%);
+}
+
+
+.meat-btn2 {
+  position: absolute;
+  left: 55%;
+  top: 26.3%;
+  transform: translate(-50%, -50%);
+}
+
+.meat-btn3 {
+  position: absolute;
+  left: 73.4%;
+  top: 26.3%;
+  transform: translate(-50%, -50%);
+}
+
+.meat-btn4 {
+  position: absolute;
+  left: 73.4%;
+  top: 46.9%;
+  transform: translate(-50%, -50%);
+}
+
+.meat-btn5 {
+  position: absolute;
+  left: 51.7%;
+  top: 50.7%;
+  transform: translate(-50%, -50%);
+}
+
+.meat-btn6 {
+  position: absolute;
+  left: 33.5%;
+  top: 50.7%;
+  transform: translate(-50%, -50%);
+}
+
+.meat-btn7 {
+  position: absolute;
+  left: 30.6%;
+  top: 71%;
+  transform: translate(-50%, -50%);
+}
+
+.meat-btn8 {
+  position: absolute;
+  left: 46.3%;
+  top: 75.3%;
+  transform: translate(-50%, -50%);
+}
+
+.meat-btn9 {
+  position: absolute;
+  left: 58.1%;
+  top: 79.3%;
+  transform: translate(-50%, -50%);
+}
+
+.meat-btn10 {
+  position: absolute;
+  left: 58.1%;
+  top: 95.5%;
+  transform: translate(-50%, -50%);
+}
+
+.vegFruit-map {
+  aspect-ratio: 1092 / 819;
+  background-image: url("img/mapa3.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+}
+
+.vegFruit-btn1 {
+  position: absolute;
+  left: 39.5%;
+  top: 14.1%;
+  transform: translate(-50%, -50%);
+}
+
+
+.vegFruit-btn2 {
+  position: absolute;
+  left: 48.9%;
+  top: 26.3%;
+  transform: translate(-50%, -50%);
+}
+
+.vegFruit-btn3 {
+  position: absolute;
+  left: 65.7%;
+  top: 34.8%;
+  transform: translate(-50%, -50%);
+}
+
+.vegFruit-btn4 {
+  position: absolute;
+  left: 64.2%;
+  top: 51%;
+  transform: translate(-50%, -50%);
+}
+
+.vegFruit-btn5 {
+  position: absolute;
+  left: 45.7%;
+  top: 50.9%;
+  transform: translate(-50%, -50%);
+}
+
+.vegFruit-btn6 {
+  position: absolute;
+  left: 37%;
+  top: 63.3%;
+  transform: translate(-50%, -50%);
+}
+
+.vegFruit-btn7 {
+  position: absolute;
+  left: 40%;
+  top: 75.3%;
+  transform: translate(-50%, -50%);
+}
+
+.vegFruit-btn8 {
+  position: absolute;
+  left: 52.4%;
+  top: 75.3%;
+  transform: translate(-50%, -50%);
+}
+
+.vegFruit-btn9 {
+  position: absolute;
+  left: 58.2%;
+  top: 83.5%;
+  transform: translate(-50%, -50%);
+}
+
+.vegFruit-btn10 {
+  position: absolute;
+  left: 58.2%;
+  top: 95.5%;
+  transform: translate(-50%, -50%);
+}
+
+.bakery-map {
+  aspect-ratio: 1092 / 819;
+  background-image: url("img/mapa4.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+}
+
+.bakery-btn1 {
+  position: absolute;
+  left: 39.4%;
+  top: 6%;
+  transform: translate(-50%, -50%);
+}
+
+
+.bakery-btn2 {
+  position: absolute;
+  left: 45.5%;
+  top: 14.5%;
+  transform: translate(-50%, -50%);
+}
+
+.bakery-btn3 {
+  position: absolute;
+  left: 52%;
+  top: 26.3%;
+  transform: translate(-50%, -50%);
+}
+
+.bakery-btn4 {
+  position: absolute;
+  left: 54%;
+  top: 39.9%;
+  transform: translate(-50%, -50%);
+}
+
+.bakery-btn5 {
+  position: absolute;
+  left: 61%;
+  top: 50.9%;
+  transform: translate(-50%, -50%);
+}
+
+.bakery-btn6 {
+  position: absolute;
+  left: 51.3%;
+  top: 53.3%;
+  transform: translate(-50%, -50%);
+}
+
+.bakery-btn7 {
+  position: absolute;
+  left: 41.5%;
+  top: 62.9%;
+  transform: translate(-50%, -50%);
+}
+
+.bakery-btn8 {
+  position: absolute;
+  left: 50.1%;
+  top: 74.1%;
+  transform: translate(-50%, -50%);
+}
+
+.bakery-btn9 {
+  position: absolute;
+  left: 60%;
+  top: 83.6%;
+  transform: translate(-50%, -50%);
+}
+
+.bakery-btn10 {
+  position: absolute;
+  left: 57.4%;
+  top: 97.2%;
+  transform: translate(-50%, -50%);
+}

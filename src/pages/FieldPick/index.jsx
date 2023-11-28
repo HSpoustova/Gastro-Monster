@@ -27,7 +27,7 @@ export const FieldPick = () => {
           <Link to="/quiz/meat" className="slice slice2">
             <span className="slice-text">Maso</span>
           </Link>
-          <Link to="/quiz/fruitveg" className="slice slice3">
+          <Link to="/quiz/vegfruit" className="slice slice3">
             <span className="slice-text">
               Ovoce
               <br />

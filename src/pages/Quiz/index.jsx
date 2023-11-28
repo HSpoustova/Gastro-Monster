@@ -8,21 +8,22 @@ import {
   fruitVegData,
   meatData,
 } from '../../components/Data';
-import button from '../FieldPick/img/button.png'
+import button from '../FieldPick/img/button.png';
 import { Button } from '../../components/Button';
+import { GameMap } from '../GameMap';
 
 const getData = () => {
   const { setData } = useParams();
 
   switch (setData) {
     case 'milk':
-      return dairyData;
+      return ['milk', dairyData];
     case 'meat':
-      return meatData;
-    case 'fruitveg':
-      return fruitVegData;
+      return ['meat', meatData];
+    case 'vegfruit':
+      return ['vegfruit', fruitVegData];
     case 'bakery':
-      return bakeryData;
+      return ['bakery', bakeryData];
     default:
       window.location.replace('/FieldPick');
   }
@@ -31,12 +32,12 @@ const getData = () => {
 export const Quiz = () => {
   return (
     <>
-     <div className="navButtons">
+      <div className="navButtons">
         <Button text="Konec" to="/" backgroundImage={button} />
         <Button text="Zpět" to="/" backgroundImage={button} />
       </div>
       <div className="container">
-        <SetQuestion array={getData()} />
+        <GameMap data={getData()} />
       </div>
     </>
   );

@@ -1,5 +1,5 @@
 import './style.css';
-import { Map } from '../../pages/Map';
+import { Map } from '../../pages/GameMap';
 
 export const ButtonMap = ({ id, name, classes }) => {
   return (

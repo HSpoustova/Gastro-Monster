@@ -4,7 +4,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { HomePage } from './pages/HomePage';
 import { FieldPick } from './pages/FieldPick';
 import { Quiz } from './pages/Quiz';
-import { Map } from './pages/Map';
+import { GameMap } from './pages/GameMap';
 import './global.css';
 
 const router = createBrowserRouter([
@@ -19,12 +19,10 @@ const router = createBrowserRouter([
   { path: 'quiz/:setData', element: <Quiz /> },
   {
     path: 'map',
-    element: <Map />,
+    element: <GameMap />,
   },
 ]);
 
 createRoot(document.querySelector('#app')).render(
-  <React.StrictMode>
-    <RouterProvider router={router} />
-  </React.StrictMode>,
+  <RouterProvider router={router} />,
 );
