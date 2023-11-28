@@ -58,36 +58,34 @@ export const GameMap = ({ data }) => {
   };
 
   return (
-    <div className="container__maps">
-      <div className={selectMap(type)}>
-        {buttons.map((buttonMap) => {
-          return (
-            <div key={buttonMap.id}>
-              <button
-                className={selectClass(type, buttonMap)}
-                key={buttonMap.id}
-                onClick={() => setShowModal(true)}
-                disabled={!(correctAnswers === buttonMap.id)}
-              >
-                {buttonMap.name}
-              </button>
-            </div>
-          );
-        })}
+    <div className={selectMap(type)}>
+      {buttons.map((buttonMap) => {
+        return (
+          <div key={buttonMap.id}>
+            <button
+              className={selectClass(type, buttonMap)}
+              key={buttonMap.id}
+              onClick={() => setShowModal(true)}
+              disabled={!(correctAnswers === buttonMap.id)}
+            >
+              {buttonMap.name}
+            </button>
+          </div>
+        );
+      })}
 
-        {showModal ? (
-          <Modal
-            toggleModal={setShowModal}
-            questionData={questionData}
-            callback={selectedAnswer}
-            answered={answered}
-            newQuestion={setAnswered}
-            food={food}
-            correctAnswers={correctAnswers}
-            answeredQuestion={answeredQuestion}
-          />
-        ) : null}
-      </div>
+      {showModal ? (
+        <Modal
+          toggleModal={setShowModal}
+          questionData={questionData}
+          callback={selectedAnswer}
+          answered={answered}
+          newQuestion={setAnswered}
+          food={food}
+          correctAnswers={correctAnswers}
+          answeredQuestion={answeredQuestion}
+        />
+      ) : null}
     </div>
   );
 };

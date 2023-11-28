@@ -6,9 +6,6 @@
   padding: 0;
 }
 
-.container__maps {
-  width: 1092px
-}
 
 .milk-map {
   aspect-ratio: 1092 / 819;
