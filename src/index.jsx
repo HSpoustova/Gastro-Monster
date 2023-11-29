@@ -4,7 +4,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { HomePage } from './pages/HomePage';
 import { FieldPick } from './pages/FieldPick';
 import { Quiz } from './pages/Quiz';
-import { GameMap } from './pages/GameMap';
+import { GameMap } from "./pages/GameMap";
 import './global.css';
 
 const router = createBrowserRouter([
