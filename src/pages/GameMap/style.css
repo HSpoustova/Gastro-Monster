@@ -9,7 +9,7 @@
 
 .milk-map {
   aspect-ratio: 792 / 519;
-  background-image: url("img/mapa1.svg");
+  background-image: url("img/mapa1.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   position: relative;
@@ -92,7 +92,7 @@
 
 .meat-map {
   aspect-ratio: 792 / 519;
-  background-image: url("img/mapa2.svg");
+  background-image: url("img/mapa2.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   position: relative;
@@ -171,7 +171,7 @@
 
 .vegFruit-map {
   aspect-ratio: 792 / 519;
-  background-image: url("img/mapa3.svg");
+  background-image: url("img/mapa3.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   position: relative;
@@ -250,7 +250,7 @@
 
 .bakery-map {
   aspect-ratio: 792 / 519;
-  background-image: url("img/mapa4.svg");
+  background-image: url("img/mapa4.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   position: relative;
