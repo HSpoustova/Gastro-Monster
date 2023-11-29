@@ -54,11 +54,11 @@ export const useEvaluationHook = (questionSet, array) => {
       setCorrectAnswers(correctAnswers + 1);
       if (checkHasWon()) {
         alert('Vyhral jsi');
-        window.location.replace('/FieldPick');
+        window.location.reload(true);
       }
     } else if (checkHasLost()) {
       alert('Nemas dostatecny pocet potravin.Prohral jsi');
-      window.location.replace('/FieldPick');
+      window.location.reload(true);
     }
   };
 
