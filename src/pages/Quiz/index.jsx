@@ -41,8 +41,8 @@ export const Quiz = () => {
   return (
     <div>
       <div className="navButtons">
-        <Button text="Konec" to="/" backgroundImage={button} />
         <Button text="Zpět" to="/fieldPick" backgroundImage={button} />
+        <Button text="Konec" to="/" backgroundImage={button} />
       </div>
       <div className="container">
         <GameMap data={getData()} />

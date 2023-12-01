@@ -7,7 +7,7 @@ import button from './img/button.png';
 
 export const FieldPick = () => {
   const { isVisible, isTextVisible, text, maskotRef, textRef, isTextShaking } = useMaskot({
-    delay: 500,
+    delay: 400,
     textProp: 'Mám hlad!',
   });
 

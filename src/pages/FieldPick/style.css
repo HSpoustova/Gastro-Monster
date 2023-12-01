@@ -131,7 +131,7 @@
 
 .maskot {
   position: fixed;
-  right: -30%;
+  right: -20%;
   bottom: 0%;
   transition: right 1s ease-in-out;
 }
