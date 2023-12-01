@@ -1,6 +1,5 @@
 import './style.css';
 import { SetQuestion } from '../../components/SetQuestion';
-import { Header } from '../../components/Header';
 import { useParams } from 'react-router-dom';
 import {
   bakeryData,
@@ -11,6 +10,7 @@ import {
 import button from '../FieldPick/img/button.png';
 import { Button } from '../../components/Button';
 import { GameMap } from '../GameMap';
+import { useEffect } from 'react';
 
 const getData = () => {
   const { setData } = useParams();
@@ -30,15 +30,23 @@ const getData = () => {
 };
 
 export const Quiz = () => {
+  useEffect(() => {
+    // Přidání třídy při zobrazení komponenty
+    document.body.classList.add('custom-background');
+    return () => {
+      document.body.classList.remove('custom-background');
+    };
+  }, []);
+
   return (
-    <>
+    <div>
       <div className="navButtons">
         <Button text="Konec" to="/" backgroundImage={button} />
-        <Button text="Zpět" to="/" backgroundImage={button} />
+        <Button text="Zpět" to="/fieldPick" backgroundImage={button} />
       </div>
       <div className="container">
         <GameMap data={getData()} />
       </div>
-    </>
+    </div>
   );
 };

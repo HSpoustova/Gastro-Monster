@@ -1,4 +1,5 @@
 import './style.css';
+import jidlo from './img/food.png';
 
 export const Modal = ({
   toggleModal,
@@ -15,34 +16,34 @@ export const Modal = ({
       newQuestion(false);
     }
   };
+
   return (
     <div>
       <div className="modal">
         <div className="modal-content">
-          <header>
-            <div>Pocet potravin: {food}</div>
+          <div className="food-amount">
+            <img className="food-pic" src={jidlo} alt="jidlo" />
+            <p className="food-text">Počet potravin: {food}</p>
             <div className="close">
-              <span className="close-btn" onClick={closeModal}>
-                &times;
-              </span>
+              <div className="close-btn" onClick={closeModal}></div>
             </div>
-            <h2>{questionData.question}</h2>
-          </header>
-          <body>
+          </div>
+          <h2 className="question">{questionData.question}</h2>
+          <div className="main-modal-body">
             {questionData.answer.map((answer, index) => (
               <div key={index}>
-                <button
+                <div
                   onClick={() => callback(index)}
                   className="button__answer"
                   disabled={answered}
                 >
                   {answer}
-                </button>
+                </div>
               </div>
             ))}
-          </body>
+          </div>
           <footer>
-            <button onClick={closeModal}>OK</button>
+            <div className='ok-button'onClick={closeModal}>OK</div>
           </footer>
         </div>
       </div>
