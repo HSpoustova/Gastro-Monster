@@ -1,5 +1,4 @@
 import './style.css';
-import { SetQuestion } from '../../components/SetQuestion';
 import { useParams } from 'react-router-dom';
 import {
   bakeryData,
