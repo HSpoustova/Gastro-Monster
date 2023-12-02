@@ -1,7 +1,6 @@
 import './style.css';
 import jidlo from './img/food.png';
 
-
 export const Modal = ({
   toggleModal,
   questionData,
@@ -18,6 +17,16 @@ export const Modal = ({
     }
   };
 
+  const buttonClass = (answered, questionData, index) => {
+    if (answered === true) {
+      if (index === questionData.correctAnswer) {
+        return 'button__answer button-answer--green';
+      } else if (!(index === questionData.correctAnswer)) {
+        return 'button__answer button-answer--red';
+      }
+    }
+    return 'button__answer';
+  };
 
   return (
     <div>
@@ -36,7 +45,7 @@ export const Modal = ({
               <div key={index}>
                 <div
                   onClick={() => callback(index)}
-                  className="button__answer"
+                  className={buttonClass(answered, questionData, index)}
                   disabled={answered}
                 >
                   {answer}
