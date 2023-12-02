@@ -89,14 +89,30 @@
 }
 
 .button-answer--green {
-
-  color: green;
-
+  background-image: url(./img/right.png);
+  display: flex;
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
+  width: 650px;
+  height: 83px;
+  white-space: nowrap;
+  overflow: hidden;
+  white-space: normal;
+  padding: 15px 30px 5px 30px;
 }
 
 .button-answer--red {
-
-  color: red;
-
-
+  background-image: url(./img/wrong.png);
+  display: flex;
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
+  width: 650px;
+  height: 83px;
+  white-space: nowrap;
+  overflow: hidden;
+  white-space: normal;
+  padding: 15px 30px 5px 30px;
+ 
 }
