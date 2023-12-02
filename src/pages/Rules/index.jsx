@@ -22,8 +22,7 @@ export const Rules = () => {
         Na začátku hry si vybereš jednu z oblastí, kterým se chceš věnovat. Mezi
         oblastmi můžeš vybírat maso, mléko, ovoce a zeleninu nebo pečivo. Po
         výběru oblasti se objevíš na hrací ploše. Tvým cílem je dojít na konec
-        mapy a cestou nakrmit příšerku, aby vyrostla. Pod každým políčkem na
-        mapě je skrytá kvízová otázka. Příšerka dostane jídlo pokaždé, když
+        mapy a cestou nakrmit příšerku, aby vyrostla. Klikni na příšerku a odpověz na otázku. Příšerka dostane jídlo pokaždé, když
         odpovíš správně, ale pozor – potraviny, které máš pro příšerku
         připravené, ti ubývají i když odpovíš špatně! Může se tedy stát, že ti
         dojdou potraviny a nebudeš mít čím příšerku nakrmit, a hra tak pro tebe
