@@ -13,7 +13,7 @@ export const dairyData = [
 
   {
     question: 'Co obsahuje mléko jako zdroj bílkovin?',
-    answer: ['Kasein.', 'Laktóza.', 'Syrovátka.', 'Kreatin.'],
+    answer: ['Kasein', 'Laktóza', 'Syrovátka', 'Kreatin'],
     correctAnswer: 0,
   },
 
@@ -117,18 +117,18 @@ export const dairyData = [
   {
     question:
       'Jaký vitamín, který je důležitý pro zrak, najdeme v mléčných výrobcích?',
-    answer: ['Vitamín A.', 'Vitamín C.', 'Vitamín B12.', 'Vitamín D.'],
+    answer: ['Vitamín A', 'Vitamín C', 'Vitamín B12', 'Vitamín D'],
     correctAnswer: 0,
   },
   {
     question: 'Které z těchto potravin je mléčný výrobek?',
-    answer: ['Hamburger.', 'Rýže.', 'Tvaroh.', 'Brambory.'],
+    answer: ['Hamburger', 'Rýže', 'Tvaroh', 'Brambory'],
     correctAnswer: 2,
   },
   {
     question:
       'U kterého vitamínu je jeho tvorba ovlivněna slunečným světlem a je také obsažen v mléčných výrobcích?',
-    answer: ['Vitamín A.', 'Vitamín B6.', 'Vitamín C.', 'Vitamín D.'],
+    answer: ['Vitamín A', 'Vitamín B6', 'Vitamín C', 'Vitamín D'],
     correctAnswer: 3,
   },
   {
@@ -176,7 +176,7 @@ export const dairyData = [
   },
   {
     question: 'Co je hlavní složkou sýra?',
-    answer: ['Voda.', 'Ovoce.', 'Mléko.', 'Zelenina.'],
+    answer: ['Voda', 'Ovoce', 'Mléko', 'Zelenina'],
     correctAnswer: 2,
   },
   {
@@ -201,17 +201,12 @@ export const dairyData = [
 
   {
     question: 'Které z těchto potravin je nejlepším zdrojem vápníku?',
-    answer: [
-      'Pomerančový džus.',
-      'Mléčná čokoláda.',
-      'Sýr.',
-      'Kukuřičné lupínky.',
-    ],
+    answer: ['Pomerančový džus', 'Mléčná čokoláda', 'Sýr', 'Kukuřičné lupínky'],
     correctAnswer: 2,
   },
   {
     question: 'Co je to laktóza, kterou najdeme v mléčných výrobcích?',
-    answer: ['Vitamín', 'Cukr.', 'Minerální látka.', 'Bílkovina.'],
+    answer: ['Vitamín', 'Cukr', 'Minerální látka', 'Bílkovina'],
     correctAnswer: 1,
   },
   {
@@ -227,22 +222,22 @@ export const dairyData = [
   },
   {
     question: 'Který mléčný výrobek se vyrábí z kysané smetany?',
-    answer: ['Zmrzlina.', 'Kefír.', 'Tvaroh.', 'Máslo.'],
+    answer: ['Zmrzlina', 'Kefír', 'Tvaroh', 'Máslo'],
     correctAnswer: 3,
   },
   {
     question: 'Jak se nazývá proces, při kterém se mléko mění na jogurt?',
-    answer: ['Fermentace.', 'Pasterace.', 'Destilace.', 'Ztužování.'],
+    answer: ['Fermentace', 'Pasterace', 'Destilace', 'Ztužování'],
     correctAnswer: 0,
   },
 
   {
     question: 'Který mléčný produkt je dobrým zdrojem bílkovin?',
     answer: [
-      'Kondenzované mléko.',
-      'Sladká smetana.',
-      'Mléčná čokoláda.',
-      'Tvaroh.',
+      'Kondenzované mléko',
+      'Sladká smetana',
+      'Mléčná čokoláda',
+      'Tvaroh',
     ],
     correctAnswer: 3,
   },
@@ -279,7 +274,7 @@ export const dairyData = [
 
   {
     question: 'Jaké další produkty se mohou vyrobit z mléka?',
-    answer: ['Sýry.', 'Jogurt.', 'Máslo.', 'Všechny výše uvedené.'],
+    answer: ['Sýry', 'Jogurt', 'Máslo', 'Všechny výše uvedené.'],
     correctAnswer: 3,
   },
 
@@ -308,20 +303,20 @@ export const dairyData = [
   {
     question: 'Který druh mléka má nejnižší obsah tuku?',
     answer: [
-      'Plnotučné mléko.',
-      'Polotučné mléko.',
-      'Odtučněné mléko.',
-      'Zahuštěné mléko.',
+      'Plnotučné mléko',
+      'Polotučné mléko',
+      'Odtučněné mléko',
+      'Zahuštěné mléko',
     ],
     correctAnswer: 2,
   },
   {
     question: 'Co je skyr?',
     answer: [
-      'Tradiční japonský sýr.',
-      'Islandský typ jogurtu.',
-      'Francouzské mléko.',
-      'Indické máslo.',
+      'Tradiční japonský sýr',
+      'Islandský typ jogurtu',
+      'Francouzské mléko',
+      'Indické máslo',
     ],
     correctAnswer: 1,
   },
@@ -377,17 +372,17 @@ export const bakeryData = [
   {
     question:
       'Jak se nazývá proces, při kterém se těsto nechá stoupat a zvětšuje svůj objem?',
-    answer: ['Přidání kvasnic.', 'Kvašení.', 'Kynutí.', 'Fermentace.'],
+    answer: ['Přidání kvasnic', 'Kvašení', 'Kynutí', 'Fermentace'],
     correctAnswer: 2,
   },
 
   {
     question: 'Co je kvasnice?',
     answer: [
-      'Typ mouky.',
-      'Rostlinný olej.',
-      'Mikroorganismus používaný k vykvašení těsta.',
-      'Sladidlo.',
+      'Typ mouky',
+      'Rostlinný olej',
+      'Mikroorganismus používaný k vykvašení těsta',
+      'Sladidlo',
     ],
     correctAnswer: 2,
   },
@@ -405,7 +400,7 @@ export const bakeryData = [
 
   {
     question: 'Jaká je hlavní složka mouky?',
-    answer: ['Tuk.', 'Bílkoviny.', 'Sacharidy.', 'Voda.'],
+    answer: ['Tuk', 'Bílkoviny', 'Sacharidy', 'Voda'],
     correctAnswer: 2,
   },
 
@@ -445,7 +440,7 @@ export const bakeryData = [
   {
     question: 'Co je to vedení těsta "na záraz"?',
     answer: [
-      'Droždí se přidá do pšeničného těsta ve chvíli, kdy zbytek těsta už je smícháný.',
+      'Droždí se přidá do pšeničného těsta ve chvíli, kdy zbytek těsta už je smíchaný.',
       'Přímé vedení těsta, všechny suroviny se smíchají s droždím v jednom kroku.',
       'Hotové těsto se zarazí do ošatky a nechá se kynout.',
     ],
@@ -559,7 +554,7 @@ export const bakeryData = [
     answer: [
       'Je to módní.',
       'Zabraňují přenosu nečistot a bakterií na pečivo.',
-      'Zabraňují ušpinění rukou',
+      'Zabraňují ušpinění rukou.',
       'Všechny možnosti.',
     ],
     correctAnswer: 1,
@@ -578,12 +573,7 @@ export const bakeryData = [
 
   {
     question: 'Jaký je hlavní rozdíl mezi hladkou a hrubou moukou?',
-    answer: [
-      'Obsah tuku.',
-      'Obsah vlákniny.',
-      'Jemnost mletí.',
-      'Obsah bílkovin.',
-    ],
+    answer: ['Obsah tuku', 'Obsah vlákniny', 'Jemnost mletí', 'Obsah bílkovin'],
     correctAnswer: 2,
   },
 
@@ -624,7 +614,7 @@ export const meatData = [
 
   {
     question: 'Jaký druh masa je nejčastěji používán při výrobě salámů?',
-    answer: ['Kuřecí.', 'Vepřové.', 'Hovězí.', 'Jehněčí.'],
+    answer: ['Kuřecí', 'Vepřové', 'Hovězí', 'Jehněčí'],
     correctAnswer: 1,
   },
 
@@ -663,14 +653,14 @@ export const meatData = [
   {
     question:
       'Jak se nazývá proces při výrobě masných výrobků, při kterém dochází k odpařování vody z povrchu výrobků a tím ke zvýšení jeho trvanlivosti?',
-    answer: ['Uzení.', 'Smažení.', 'Sušení.', 'Zrání.'],
+    answer: ['Uzení', 'Smažení', 'Sušení', 'Zrání'],
     correctAnswer: 2,
   },
 
   {
     question:
       'Jak se nazývá proces při výrobě masných výrobků, při kterém se přídavá sůl nebo solící směsi?',
-    answer: ['Chloridace.', 'Slazení.', 'Okyselování.', 'Solení.'],
+    answer: ['Chloridace', 'Slazení', 'Okyselování', 'Solení'],
     correctAnswer: 3,
   },
 
@@ -678,23 +668,23 @@ export const meatData = [
     question:
       'Jak se nazývá proces při výrobě masných výrobků, při kterém dochází k opracování díky dosažení vysokých teplot?',
     answer: [
-      'Teplotní opracování.',
-      'Tepelné opracování.',
-      'Teplé zpracování.',
-      'Teplotní zpracování.',
+      'Teplotní opracování',
+      'Tepelné opracování',
+      'Teplé zpracování',
+      'Teplotní zpracování',
     ],
     correctAnswer: 1,
   },
 
   {
     question: 'Co je charakterická složka pro výrobu jitrnice?',
-    answer: ['Srdce.', 'Játra.', 'Jazyk.', 'Kopýtka.'],
+    answer: ['Srdce', 'Játra', 'Jazyk', 'Kopýtka'],
     correctAnswer: 1,
   },
 
   {
     question: 'Který masný výrobek se tradičně spojuje s táborákem?',
-    answer: ['Špekáčky.', 'Sekaná.', 'Tlačenka.', 'Jelita.'],
+    answer: ['Špekáčky', 'Sekaná', 'Tlačenka', 'Jelita'],
     correctAnswer: 0,
   },
 
@@ -713,10 +703,10 @@ export const meatData = [
     question:
       'Jak se nazývají procesy při výrobě masných výrobků, při kterém dochází k řezání a mělnění masa a promíchávání s dalšími surovinami?',
     answer: [
-      'Řezání a zamíchání',
+      'Řezání a zamíchání.',
       'Řezání a smíchání.',
       'Mělnění a zamíchání.',
-      'Mělnění a míchání',
+      'Mělnění a míchání.',
     ],
     correctAnswer: 3,
   },
@@ -735,17 +725,17 @@ export const meatData = [
   {
     question: 'Který masný výrobek je typický pro Itálii?',
     answer: [
-      'Italské párečky.',
-      'Římský salám.',
-      'Milánské klobásy.',
-      'Parmská šunka.',
+      'Italské párečky',
+      'Římský salám',
+      'Milánské klobásy',
+      'Parmská šunka',
     ],
     correctAnswer: 3,
   },
 
   {
     question: 'Po kterém českém městě nese název jedna z našich šunek?',
-    answer: ['Brno.', 'Olomouc.', 'Ostrava.', 'Praha.'],
+    answer: ['Brno', 'Olomouc', 'Ostrava', 'Praha'],
     correctAnswer: 3,
   },
 
@@ -783,16 +773,16 @@ export const meatData = [
 
   {
     question: 'Který z masných výrobků není salám?',
-    answer: ['Herkules.', 'Lovečák.', 'Uherák.', 'Všechny jsou to salámy.'],
+    answer: ['Herkules', 'Lovečák', 'Uherák', 'Všechny jsou to salámy.'],
     correctAnswer: 3,
   },
 
   {
     question: 'Který z masných výrobků je typický pro zabijačku?',
     answer: [
-      'Jelito.',
-      'Jitrnice.',
-      'Ovar.',
+      'Jelito',
+      'Jitrnice',
+      'Ovar',
       'Všechny výrobky jsou typické pro zabijačku.',
     ],
     correctAnswer: 3,
@@ -824,7 +814,7 @@ export const fruitVegData = [
 
   {
     question: 'Jaké technologie se používají k pěstování zeleniny?',
-    answer: ['Skleníky.', 'Hydroponie.', 'Tradiční pole.', 'Všechny možnosti.'],
+    answer: ['Skleníky', 'Hydroponie', 'Tradiční pole', 'Všechny možnosti'],
     correctAnswer: 3,
   },
 
@@ -893,19 +883,19 @@ export const fruitVegData = [
 
   {
     question: 'Které ovoce není vhodné pro skladování v lednici?',
-    answer: ['Jablka.', 'Banány.', 'Hrušky.', 'Jahody.'],
+    answer: ['Jablka', 'Banány', 'Hrušky', 'Jahody'],
     correctAnswer: 1,
   },
 
   {
     question: 'Které ovoce nepatří mezi citrusy?',
-    answer: ['Citrón.', 'Pomeranč.', 'Pomelo.', 'Avokádo.'],
+    answer: ['Citrón', 'Pomeranč', 'Pomelo', 'Avokádo'],
     correctAnswer: 3,
   },
 
   {
     question: 'Z jakoho ovoce se nevyrábí povidla?',
-    answer: ['Z meruněk.', 'Z broskví.', 'Z jablek.', 'Ze švestek.'],
+    answer: ['Z meruněk', 'Z broskví', 'Z jablek', 'Ze švestek'],
     correctAnswer: 1,
   },
 
@@ -924,10 +914,10 @@ export const fruitVegData = [
     question:
       'Jaký údaj musí být povinně uveden při prodeji všech druhů ovoce a zeleniny?',
     answer: [
-      'Jakostní třída.',
-      'Odrůda.',
-      'Země původu.',
-      'Botanický název v latině.',
+      'Jakostní třída',
+      'Odrůda',
+      'Země původu',
+      'Botanický název v latině',
     ],
     correctAnswer: 2,
   },
@@ -935,14 +925,14 @@ export const fruitVegData = [
   {
     question:
       'Které ovoce se v našich podmínkách nejvíce využívá pro výrobu ovocných šťáv?',
-    answer: ['Hruška.', 'Jablko.', 'Meruňka.', 'Hrozny révy vinné.'],
+    answer: ['Hruška', 'Jablko', 'Meruňka', 'Hrozny révy vinné'],
     correctAnswer: 1,
   },
 
   {
     question:
       'Která technologie pěstování zeleniny je založena na vodním prostředí bez půdy?',
-    answer: ['Tradiční pole.', 'Skleníky.', 'Hydroponie.', 'Kbelíková metoda.'],
+    answer: ['Tradiční pole', 'Skleníky', 'Hydroponie', 'Kbelíková metoda'],
     correctAnswer: 2,
   },
 
@@ -960,7 +950,7 @@ export const fruitVegData = [
   {
     question:
       'Která z uvedených potravin pomáhá proti zhnědnutí ovoce a zeleniny při sušení?',
-    answer: ['Sůl.', 'Cukr.', 'Bělidlo.', 'Kyselina citronová.'],
+    answer: ['Sůl', 'Cukr', 'Bělidlo', 'Kyselina citronová'],
     correctAnswer: 3,
   },
 ];
