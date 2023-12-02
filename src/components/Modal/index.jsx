@@ -44,7 +44,11 @@ export const Modal = ({
             {questionData.answer.map((answer, index) => (
               <div key={index}>
                 <div
-                  onClick={() => callback(index)}
+                   onClick={() => {
+                    if (!answered) { 
+                      callback(index);
+                    }
+                  }}
                   className={buttonClass(answered, questionData, index)}
                   disabled={answered}
                 >
@@ -55,7 +59,7 @@ export const Modal = ({
           </div>
           <footer>
             <div className="ok-button" onClick={closeModal}>
-              OK
+              Další
             </div>
           </footer>
         </div>
