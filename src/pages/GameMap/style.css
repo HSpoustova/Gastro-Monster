@@ -326,3 +326,16 @@
   top: 93.2%;
   transform: translate(-50%, -50%);
 }
+
+.avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 70px;
+  background-image: url(./img/avatar_map.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+
+
+}

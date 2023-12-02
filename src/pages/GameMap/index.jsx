@@ -60,14 +60,11 @@ export const GameMap = ({ data }) => {
 
   return (
     <div className={selectMap(type)}>
-      <button
-        className={selectClass(type, buttons[correctAnswers])}
+      <div
+        className={`avatar ${selectClass(type, buttons[correctAnswers])}`}
         key={buttons[correctAnswers].id}
         onClick={() => setShowModal(true)}
-      >
-        <img src={avatar} />
-        {buttons[correctAnswers].name}
-      </button>
+      ></div>
 
       {showModal ? (
         <Modal
