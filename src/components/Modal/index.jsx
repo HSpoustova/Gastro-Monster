@@ -1,6 +1,6 @@
 import './style.css';
 import jidlo from './img/food.png';
-import { useMaskot } from '../useMaskot';
+
 
 export const Modal = ({
   toggleModal,
@@ -17,11 +17,6 @@ export const Modal = ({
       newQuestion(false);
     }
   };
-
-  const { isVisible, isTextVisible, text, maskotRef, textRef, isTextShaking } = useMaskot({
-    delay: 400,
-    textProp: 'Mám hlad!',
-  });
 
 
   return (
@@ -49,24 +44,6 @@ export const Modal = ({
               </div>
             ))}
           </div>
-          <div className="maskot-container">
-          {isTextVisible && (
-            <div
-              ref={textRef}
-              className={`maskot-text-bubble ${
-                isTextShaking ? 'shaking-text' : ''
-              }`}
-            >
-              {text}
-            </div>
-          )}
-          <div
-            ref={maskotRef}
-            className={`maskot ${isVisible ? 'active' : ''}`}
-          >
-            <img className="maskot-pic" src={maskotAdultNeutral} alt="Maskot" />
-          </div>
-        </div>
           <footer>
             <div className='ok-button'onClick={closeModal}>OK</div>
           </footer>
