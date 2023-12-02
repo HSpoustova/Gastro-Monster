@@ -1,6 +1,8 @@
 import './style.css';
 import { useMaskot } from '../../components/useMaskot.jsx';
-import maskotAdultNeutral from '../FieldPick/img/maskot-adult-neutral.png';
+import maskotEggSad from '../FieldPick/img/maskot-egg-sad.png';
+import { Nav } from '../../components/Nav';
+import nav from '../FieldPick/img/nav.png';
 
 export const Rules = () => {
   const { isVisible, isTextVisible, text, maskotRef, textRef, isTextShaking } =
@@ -31,6 +33,10 @@ export const Rules = () => {
       <p className="indented-paragraph">
         Hodně štěstí a nenech příšerku hladovět!
       </p>
+      <div className='nav-buttons-rules'>
+      <Nav text="Hrát" to="/fieldPick" backgroundImage={nav} />
+      <Nav text="Zpět" to="/" backgroundImage={nav} />
+      </div>
       <div className="maskot-container">
         {isTextVisible && (
           <div
@@ -43,7 +49,7 @@ export const Rules = () => {
           </div>
         )}
         <div ref={maskotRef} className={`maskot ${isVisible ? 'active' : ''}`}>
-          <img className="maskot-pic" src={maskotAdultNeutral} alt="Maskot" />
+          <img className="maskot-pic" src={maskotEggSad} alt="Maskot" />
         </div>
       </div>
     </div>
