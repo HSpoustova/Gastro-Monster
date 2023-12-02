@@ -4,6 +4,7 @@ import { useQuestionHook } from '../../components/useQuestionHook';
 import { useEvaluationHook } from '../../components/useEvaluationHook';
 import { useState } from 'react';
 import { Modal } from '../../components/Modal';
+import avatar from '../../pages/GameMap/img/avatar_map.svg';
 
 const selectClass = (type, buttonObj) => {
   switch (type) {
@@ -64,6 +65,7 @@ export const GameMap = ({ data }) => {
         key={buttons[correctAnswers].id}
         onClick={() => setShowModal(true)}
       >
+        <img src={avatar} />
         {buttons[correctAnswers].name}
       </button>
 

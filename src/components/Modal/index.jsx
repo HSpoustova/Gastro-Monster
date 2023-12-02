@@ -18,11 +18,11 @@ export const Modal = ({
     }
   };
 
-  const { isVisible, isTextVisible, text, maskotRef, textRef, isTextShaking } = useMaskot({
-    delay: 400,
-    textProp: 'Mám hlad!',
-  });
-
+  const { isVisible, isTextVisible, text, maskotRef, textRef, isTextShaking } =
+    useMaskot({
+      delay: 400,
+      textProp: 'Mám hlad!',
+    });
 
   return (
     <div>
@@ -50,25 +50,25 @@ export const Modal = ({
             ))}
           </div>
           <div className="maskot-container">
-          {isTextVisible && (
+            {isTextVisible && (
+              <div
+                ref={textRef}
+                className={`maskot-text-bubble ${
+                  isTextShaking ? 'shaking-text' : ''
+                }`}
+              >
+                {text}
+              </div>
+            )}
             <div
-              ref={textRef}
-              className={`maskot-text-bubble ${
-                isTextShaking ? 'shaking-text' : ''
-              }`}
-            >
-              {text}
-            </div>
-          )}
-          <div
-            ref={maskotRef}
-            className={`maskot ${isVisible ? 'active' : ''}`}
-          >
-            <img className="maskot-pic" src={maskotAdultNeutral} alt="Maskot" />
+              ref={maskotRef}
+              className={`maskot ${isVisible ? 'active' : ''}`}
+            ></div>
           </div>
-        </div>
           <footer>
-            <div className='ok-button'onClick={closeModal}>OK</div>
+            <div className="ok-button" onClick={closeModal}>
+              OK
+            </div>
           </footer>
         </div>
       </div>
