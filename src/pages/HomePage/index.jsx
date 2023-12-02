@@ -16,6 +16,7 @@ export const HomePage = () => {
           to="https://super-sable-baa73c.netlify.app"
           backgroundImage={nav}
         />
+        <Nav text="Pravidla" to="/rules" backgroundImage={nav} />
       </div>
       <SleepingMaskot />
     </>

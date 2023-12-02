@@ -6,6 +6,7 @@ import { FieldPick } from './pages/FieldPick';
 import { Quiz } from './pages/Quiz';
 import { GameMap } from "./pages/GameMap";
 import './global.css';
+import { Rules } from './pages/Rules'
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
   {
     path: 'map',
     element: <GameMap />,
+  },
+  {
+    path: 'rules',
+    element: <Rules />,
   },
 ]);
 
