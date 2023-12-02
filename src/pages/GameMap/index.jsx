@@ -4,7 +4,8 @@ import { useQuestionHook } from '../../components/useQuestionHook';
 import { useEvaluationHook } from '../../components/useEvaluationHook';
 import { useState } from 'react';
 import { Modal } from '../../components/Modal';
-import avatar from '../../pages/GameMap/img/avatar_map.svg';
+import { useMaskotMap } from '../../components/useMaskotMap';
+import MaskotAdultAngry from '../../components/Modal/img/maskot-adult-angry.png';
 
 const selectClass = (type, buttonObj) => {
   switch (type) {
@@ -44,10 +45,17 @@ export const GameMap = ({ data }) => {
     answered,
     setAnswered,
     questionData,
-    correctAnswers,
+    correctAnswers, // Toto je místo, kde se 'correctAnswers' získává
     answeredQuestion,
   ] = useEvaluationHook(questionSet, array);
-
+  const currentButtonId =
+    correctAnswers !== undefined ? buttons[correctAnswers].id : 0;
+  const { isVisible, isTextVisible, text, maskotRef, textRef, maskotImage } =
+    useMaskotMap({
+      delay: 400,
+      textProp: 'Mám hlad!',
+      currentButtonId, // Použití 'currentButtonId' místo přímého přístupu k 'buttons[correctAnswers].id'
+    });
   const selectedAnswer = (selectedAnswerIndex) => {
     if (selectedAnswerIndex === questionData.correctAnswer) {
       alert('Správná odpověď');
@@ -65,7 +73,17 @@ export const GameMap = ({ data }) => {
         key={buttons[correctAnswers].id}
         onClick={() => setShowModal(true)}
       ></div>
-
+      <div className="maskot-container">
+        {isTextVisible && (
+          <div ref={textRef} className="maskot-text-bubble">
+            {text}
+          </div>
+        )}
+        <div ref={maskotRef} className={`maskot ${isVisible ? 'active' : ''}`}>
+          <img className="maskot-pic" src={maskotImage} alt="Maskot" />{' '}
+          {/* Použití maskotImage */}
+        </div>
+      </div>
       {showModal ? (
         <Modal
           toggleModal={setShowModal}
