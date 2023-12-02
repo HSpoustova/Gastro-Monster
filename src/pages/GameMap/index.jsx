@@ -59,20 +59,13 @@ export const GameMap = ({ data }) => {
 
   return (
     <div className={selectMap(type)}>
-      {buttons.map((buttonMap) => {
-        return (
-          <div key={buttonMap.id}>
-            <button
-              className={selectClass(type, buttonMap)}
-              key={buttonMap.id}
-              onClick={() => setShowModal(true)}
-              disabled={!(correctAnswers === buttonMap.id)}
-            >
-              {buttonMap.name}
-            </button>
-          </div>
-        );
-      })}
+      <button
+        className={selectClass(type, buttons[correctAnswers])}
+        key={buttons[correctAnswers].id}
+        onClick={() => setShowModal(true)}
+      >
+        {buttons[correctAnswers].name}
+      </button>
 
       {showModal ? (
         <Modal
@@ -89,3 +82,18 @@ export const GameMap = ({ data }) => {
     </div>
   );
 };
+
+/*{buttons.map((buttonMap) => {
+        return (
+          <div key={buttonMap.id}>
+            <button
+              className={selectClass(type, buttonMap)}
+              key={buttonMap.id}
+              onClick={() => setShowModal(true)}
+              disabled={!(correctAnswers === buttonMap.id)}
+            >
+              {buttonMap.name}
+            </button>
+          </div>
+        );
+      })}*/
