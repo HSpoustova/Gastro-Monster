@@ -58,11 +58,9 @@ export const GameMap = ({ data }) => {
     });
   const selectedAnswer = (selectedAnswerIndex) => {
     if (selectedAnswerIndex === questionData.correctAnswer) {
-      alert('Správná odpověď');
       setAnswer(true);
       return;
     }
-    alert('Špatná odpověď');
     setAnswer(false);
   };
 
