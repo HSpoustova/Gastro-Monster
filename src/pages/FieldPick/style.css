@@ -134,31 +134,34 @@
   right: -20%;
   bottom: 0%;
   transition: right 1s ease-in-out;
+  z-index: 100; /* Ujistěte se, že maskot je nad ostatními prvky. */
 }
 
 .maskot-pic {
-  width: 300px;
+  width: 300px; /* Šířka obrázku maskota */
 }
 
 .maskot.active {
-  right: 1px;
+  right: 1px; /* Maskot je aktivní a přesune se do okraje obrazovky */
 }
+
 .maskot-text-bubble {
   width: 200px;
   height: 190px;
   background-image: url('./img/textBubble.png');
   background-repeat: no-repeat;
   background-size: contain;
-  position: fixed;
-  right: 150px; 
-  bottom: 55%;
+  position: fixed; 
+  right: 120px; 
+  bottom: 400px; 
   display: flex;
   justify-content: center; 
   align-items: flex-start;
-  padding-top: 30px;
   font-size: 2em;
+  padding-top: 30px;
+  z-index: 99;
+  transition: right 1s ease-in-out; 
 }
-
 @keyframes shake {
   0%, 100% { transform: translateX(0); }
   10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
