@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react';
 import { GetRandomObject } from './GetRandomObject';
+import { ModalLost } from './ModalLost';
+import { ModalWin } from './ModalWin';
 
 export const useEvaluationHook = (questionSet, array) => {
   const [questionData, setQuestionData] = useState({
@@ -18,6 +20,9 @@ export const useEvaluationHook = (questionSet, array) => {
   const [correctAnswers, setCorrectAnswers] = useState(0);
   //stav, ktery znaci, jestli odpovedel
   const [answered, setAnswered] = useState(false);
+
+  const [isWin, setIsWin] = useState(false);
+  const [isLost, setIsLost] = useState(false);
 
   //definovani funkce, zda vyhral (musi byt definovano, nez pouzijeme), vraci true false
   const checkHasWon = () => {
@@ -53,25 +58,22 @@ export const useEvaluationHook = (questionSet, array) => {
     if (status) {
       setCorrectAnswers(correctAnswers + 1);
       if (checkHasWon()) {
+        setIsWin(true);
         alert('Vyhral jsi');
         window.location.reload(true);
       }
     } else if (checkHasLost()) {
+      setIsLost(true);
       alert('Nemas dostatecny pocet potravin.Prohral jsi');
       window.location.reload(true);
     }
   };
 
-  /**/
-
-  /*Pokud obdrezl index, tak ho vyhodnoti*/
   useEffect(() => {
     if (answer > -1) {
       handleAnswer(answer);
     }
   }, [answer]);
-
-  /*Pokud klikne na dalsi, tak da novou otazku*/
 
   useEffect(() => {
     if (!answered) {
@@ -79,6 +81,16 @@ export const useEvaluationHook = (questionSet, array) => {
     }
   }, [answered]);
 
-  //vraci vyber hodnot, ktere budeme potrebovat jinde - poslat je do jinych komponent
-  return [food, setAnswer, answered, setAnswered, questionData, correctAnswers];
+  return [
+    food,
+    setAnswer,
+    answered,
+    setAnswered,
+    questionData,
+    correctAnswers,
+    isWin,
+    isLost,
+    setIsWin,
+    setIsLost,
+  ];
 };
