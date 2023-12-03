@@ -34,10 +34,11 @@ export const Modal = ({
   };
 
   if (isGameOver === 'win') {
-    return <ModalWin close={closeModal} />;
+    return <ModalWin close={toggleModal} />;
   }
+
   if (isGameOver === 'lost') {
-    return <ModalLost close={closeModal} />;
+    return <ModalLost close={toggleModal} />;
   }
 
   return (

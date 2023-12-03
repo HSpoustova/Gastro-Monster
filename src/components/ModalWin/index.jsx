@@ -13,9 +13,9 @@ export const ModalWin = ({ close }) => {
           <div className="close-btn" onClick={closeModal}></div>
         </div>
 
-          <div className="main-win"></div>
-        </div>
-      
+        <div className="main-win"></div>
+      </div>
+
       <footer>
         <div className="ok-button" onClick={closeModal}>
           Další

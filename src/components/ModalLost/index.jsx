@@ -7,18 +7,19 @@ export const ModalLost = ({ close }) => {
 
   return (
     <div>
-      <div className="modal"></div>
-      <div className="modal-content">
-        <div className="close">
-          <div className="close-btn" onClick={closeModal}></div>
+      <div className="modal">
+        <div className="modal-content">
+          <div className="close">
+            <div className="close-btn" onClick={closeModal}></div>
+          </div>
         </div>
-        <div className="main-lost"></div>
+        <div className="main-modal-body"></div>
+        <footer>
+          <div className="ok-button" onClick={closeModal}>
+            Další
+          </div>
+        </footer>
       </div>
-      <footer>
-        <div className="ok-button" onClick={closeModal}>
-          Další
-        </div>
-      </footer>
     </div>
   );
 };

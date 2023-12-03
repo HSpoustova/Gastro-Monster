@@ -44,19 +44,20 @@
   padding-top: 15px;
 }
 
-.main- {
+.question {
   font-size: 1.1em;
   font-weight: 400;
-  background-image: url(./lost.png);
+  background-image: url(./img/question.png);
   background-size: cover;
   background-position: center;
-  width: 400 px;
+  width: 800px;
   height: 250px;
   display: flex;
   justify-content: center;
   align-items: center;
   padding-top: 15px;
 }
+
 
 
 .ok-button {
