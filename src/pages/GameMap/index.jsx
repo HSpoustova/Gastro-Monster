@@ -5,7 +5,6 @@ import { useEvaluationHook } from '../../components/useEvaluationHook';
 import { useState } from 'react';
 import { Modal } from '../../components/Modal';
 import { useMaskotMap } from '../../components/useMaskotMap';
-import MaskotAdultAngry from '../../components/Modal/img/maskot-adult-angry.png';
 import { ModalWin } from '../../components/ModalWin';
 import { ModalLost } from '../../components/ModalLost';
 
@@ -65,18 +64,12 @@ export const GameMap = ({ data }) => {
       currentButtonId,
       isCorrectAnswer: lastAnswerWasCorrect,
     });
-  // const selectedAnswer = (selectedAnswerIndex) => {
-  //   if (selectedAnswerIndex === questionData.correctAnswer) {
-  //     setAnswer(true);
-  //     return;
-  //   }
-  //   setAnswer(false);
-  // };
+
   const selectedAnswer = (selectedAnswerIndex) => {
     const isCorrect = selectedAnswerIndex === questionData.correctAnswer;
-    setAnswer(isCorrect); // Stávající funkčnost zachována
+    setAnswer(isCorrect); 
 
-    // Nově přidané: Aktualizovat stav pro správnost odpovědi
+    
     setLastAnswerWasCorrect(isCorrect);
   };
 
@@ -95,7 +88,6 @@ export const GameMap = ({ data }) => {
         )}
         <div ref={maskotRef} className={`maskot ${isVisible ? 'active' : ''}`}>
           <img className="maskot-pic" src={maskotImage} alt="Maskot" />{' '}
-          {/* Použití maskotImage */}
         </div>
       </div>
 

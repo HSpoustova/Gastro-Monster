@@ -1,26 +1,26 @@
 import './style.css';
+import { useNavigate } from 'react-router-dom'; 
+
 
 export const ModalWin = ({ close }) => {
+  const navigate = useNavigate(); 
+
   const closeModal = () => {
     close(false);
+    navigate('/fieldPick'); 
   };
 
   return (
     <div>
-      <div className="modal"></div>
-      <div className="modal-content">
-        <div className="close">
-          <div className="close-btn" onClick={closeModal}></div>
+      <div className="modal">
+        <div className="modal-content-again-win">
+          <div className="win"> Vyhrál jsi!
+            </div> 
+          <div className="close-again">
+            <div className="again-btn" onClick={closeModal}>Hrát znovu</div>
+          </div>
         </div>
-
-        <div className="main-win"></div>
       </div>
-
-      <footer>
-        <div className="ok-button" onClick={closeModal}>
-          Další
-        </div>
-      </footer>
     </div>
   );
 };
