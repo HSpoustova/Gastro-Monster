@@ -38,6 +38,7 @@ export const GameMap = ({ data }) => {
   const array = data[1];
   const [questionSet, setQuestionSet] = useQuestionHook(array);
   const [showModal, setShowModal] = useState(false);
+  const [lastAnswerWasCorrect, setLastAnswerWasCorrect] = useState(null);
 
   const [
     food,
@@ -50,18 +51,24 @@ export const GameMap = ({ data }) => {
   ] = useEvaluationHook(questionSet, array);
   const currentButtonId =
     correctAnswers !== undefined ? buttons[correctAnswers].id : 0;
-  const { isVisible, isTextVisible, text, maskotRef, textRef, maskotImage } =
-    useMaskotMap({
+    const { isVisible, isTextVisible, text, maskotRef, textRef, maskotImage } = useMaskotMap({
       delay: 400,
-      textProp: 'Mám hlad!',
-      currentButtonId, // Použití 'currentButtonId' místo přímého přístupu k 'buttons[correctAnswers].id'
+      currentButtonId,
+      isCorrectAnswer: lastAnswerWasCorrect
     });
+  // const selectedAnswer = (selectedAnswerIndex) => {
+  //   if (selectedAnswerIndex === questionData.correctAnswer) {
+  //     setAnswer(true);
+  //     return;
+  //   }
+  //   setAnswer(false);
+  // };
   const selectedAnswer = (selectedAnswerIndex) => {
-    if (selectedAnswerIndex === questionData.correctAnswer) {
-      setAnswer(true);
-      return;
-    }
-    setAnswer(false);
+    const isCorrect = selectedAnswerIndex === questionData.correctAnswer;
+    setAnswer(isCorrect); // Stávající funkčnost zachována
+  
+    // Nově přidané: Aktualizovat stav pro správnost odpovědi
+    setLastAnswerWasCorrect(isCorrect);
   };
 
   return (
