@@ -60,9 +60,8 @@ export const GameMap = ({ data }) => {
 
   const selectedAnswer = (selectedAnswerIndex) => {
     const isCorrect = selectedAnswerIndex === questionData.correctAnswer;
-    setAnswer(isCorrect); 
+    setAnswer(isCorrect);
 
-    
     setLastAnswerWasCorrect(isCorrect);
   };
 
@@ -95,8 +94,6 @@ export const GameMap = ({ data }) => {
           correctAnswers={correctAnswers}
           answeredQuestion={answeredQuestion}
           isGameOver={isGameOver}
-          setShowModal={setShowModal}
-          schowModal={showModal}
         />
       ) : null}
     </div>
