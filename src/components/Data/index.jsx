@@ -823,7 +823,7 @@ export const meatData = [
     answer: [
       'Jsou to malé kousky masa, které jsou tvarovány do kuliček.',
       'Jsou to malé zbytky jedlých a nejedlých částí zvířete.',
-      'Jsou to jedlé části zvířete, které se nepočítají k masu, např. játra, srdce, jazyk, ledviny apod.',
+      'Jsou to jedlé části zvířete, které se nepočítají k masu, např. játra, srdce, jazyk apod.',
       'Jsou to zbytky částí zvířat, které nejsou jedlé.',
     ],
     correctAnswer: 2,
@@ -846,7 +846,7 @@ export const meatData = [
     answer: [
       'Krev se pro potravinářské účely nevyužívá.',
       'Krev se využívá pouze pro technické účely.',
-      'Jako surovina pro výrobu některých masných výrobků, jako jsou jelita.',
+      'Jako surovina pro výrobu některých masných výrobků, např. jelita.',
       'Krev se využívá pouze pro krmné účely.',
     ],
     correctAnswer: 2,
@@ -916,11 +916,6 @@ export const meatData = [
       'Všechny výrobky jsou typické pro zabijačku.',
     ],
     correctAnswer: 3,
-  },
-  {
-    question: 'Co je hlavní zdroj bílkovin v masných výrobcích?',
-    answer: ['Tuky', 'Sacharidy', 'Bílkoviny', 'Vitamíny'],
-    correctAnswer: 2,
   },
 
   {
