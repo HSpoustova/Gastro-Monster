@@ -109,28 +109,28 @@
 .meat-btn2 {
   position: absolute;
   left: 55%;
-  top: 28.3%;
+  top: 26.3%;
   transform: translate(-50%, -50%);
 }
 
 .meat-btn3 {
   position: absolute;
-  left: 72.4%;
-  top: 28.3%;
+  left: 71.4%;
+  top: 26.3%;
   transform: translate(-50%, -50%);
 }
 
 .meat-btn4 {
   position: absolute;
-  left: 72.4%;
-  top: 46.9%;
+  left: 71.4%;
+  top: 44.9%;
   transform: translate(-50%, -50%);
 }
 
 .meat-btn5 {
   position: absolute;
   left: 49.7%;
-  top: 50.7%;
+  top: 49.7%;
   transform: translate(-50%, -50%);
 }
 
@@ -331,9 +331,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 60px;
-  height: 70px;
-  background-image: url(./img/avatar_map.svg);
+  width: 70px;
+  height: 80px;
+  background-image: url(./img/avatar_mapa.svg);
   background-size: contain;
   background-repeat: no-repeat;
 

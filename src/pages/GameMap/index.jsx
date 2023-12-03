@@ -50,10 +50,6 @@ export const GameMap = ({ data }) => {
     questionData,
     correctAnswers,
     answeredQuestion,
-    setIsWin,
-    setIsLost,
-    isWin,
-    isLost,
     isGameOver,
   ] = useEvaluationHook(questionSet, array);
 

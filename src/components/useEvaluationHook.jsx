@@ -21,8 +21,6 @@ export const useEvaluationHook = (questionSet, array) => {
   //stav, ktery znaci, jestli odpovedel
   const [answered, setAnswered] = useState(false);
 
-  const [isWin, setIsWin] = useState(false);
-  const [isLost, setIsLost] = useState(false);
   const [isGameOver, setIsGameOver] = useState('question');
 
   //definovani funkce, zda vyhral (musi byt definovano, nez pouzijeme), vraci true false
