@@ -54,16 +54,16 @@ export const useEvaluationHook = (questionSet, array) => {
     if (isGameOver !== 'question') {
       return;
     }
-  
+
     setAnswered(true);
     setAnswer(-1);
     setAnsweredQuestion(answeredQuestion + 1);
     setFood(food - 1);
-  
+
     if (status) {
       const newCorrectAnswers = correctAnswers + 1;
       setCorrectAnswers(newCorrectAnswers);
-  
+
       if (newCorrectAnswers >= 9) {
         setIsGameOver('win');
       }
@@ -78,13 +78,13 @@ export const useEvaluationHook = (questionSet, array) => {
     }
   }, [answer]);
 
-useEffect(() => {
-  if (!answered && isGameOver === 'question') {
-    updateQuestionData();
-  }
-}, [answered, isGameOver]);
+  useEffect(() => {
+    if (!answered && isGameOver === 'question') {
+      updateQuestionData();
+    }
+  }, [answered, isGameOver]);
 
-  return [
+  return {
     food,
     setAnswer,
     answered,
@@ -93,5 +93,5 @@ useEffect(() => {
     correctAnswers,
     answeredQuestion,
     isGameOver,
-  ];
+  };
 };
