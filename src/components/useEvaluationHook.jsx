@@ -50,19 +50,29 @@ export const useEvaluationHook = (questionSet, array) => {
   - obnovi stranku */
 
   const handleAnswer = (status) => {
+    // Pokud hra skončila, nebudeme pokračovat v nastavování dalších otázek
+    if (isGameOver !== 'question') {
+      return;
+    }
+  
     setAnswered(true);
     setAnswer(-1);
     setAnsweredQuestion(answeredQuestion + 1);
     setFood(food - 1);
+  
     if (status) {
-      setCorrectAnswers(correctAnswers + 1);
-      if (checkHasWon()) {
+      const newCorrectAnswers = correctAnswers + 1;
+      setCorrectAnswers(newCorrectAnswers);
+  
+      // Kontrola, zda hráč vyhrál po každé správné odpovědi
+      if (newCorrectAnswers >= 9) {
         setIsGameOver('win');
-        alert('Vyhral jsi');
+        // Zde můžete volitelně přidat logiku pro zobrazení modálního okna pro výhru, pokud již není jinde
+        // Například pomocí callbacku nebo události
       }
     } else if (checkHasLost()) {
       setIsGameOver('lost');
-      alert('Nevyhral jsi');
+      // Zde můžete volitelně přidat logiku pro zobrazení modálního okna pro prohru, pokud již není jinde
     }
   };
 
@@ -72,11 +82,12 @@ export const useEvaluationHook = (questionSet, array) => {
     }
   }, [answer]);
 
-  useEffect(() => {
-    if (!answered) {
-      updateQuestionData();
-    }
-  }, [answered]);
+useEffect(() => {
+  // Pokud hra neskončila a hráč neodpověděl, obnovíme otázku
+  if (!answered && isGameOver === 'question') {
+    updateQuestionData();
+  }
+}, [answered, isGameOver]);
 
   return [
     food,
