@@ -3,7 +3,7 @@ import './style.css';
 import sleepingMaskot from './img/sleepingMaskot.png'; 
 
 export const SleepingMaskot = () => {
-  const [zPositions, setZPositions] = useState([120, 140, 130]);
+  const [zPositions, setZPositions] = useState([150, 170, 140]);
 
   useEffect(() => {
     const interval = setInterval(() => {
