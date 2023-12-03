@@ -532,7 +532,7 @@ export const bakeryData = [
     answer: [
       'Provozovna, ve které se jen prodává pečivo.',
       'Provozovna, kde přespává pekař.',
-      'Provozovna, ve které proběhly všechny části výroby pekařského výrobku, vč. skladování surovin přes přípravu a zpracování těst po finální tepelnou úpravu.',
+      'Provozovna, ve které proběhly všechny části výroby, vč. skladování surovin přes přípravu a zpracování těst po finální tepelnou úpravu.',
     ],
     correctAnswer: 2,
   },
@@ -763,7 +763,7 @@ export const meatData = [
     question: 'Co to jsou fermentované trvanlivé salámy?',
     answer: [
       'Tento druh salámů se už nevyrábí.',
-      'Salámy vyrobené fermentací masa pomocí bakterií, které přeměňují cukry na kyselinu mléčnou (dojde k okyselení) díky čemuž si zachovávají svou trvanlivost.',
+      'Salámy vyrobené fermentací masa pomocí bakterií, které přeměňují cukry na kyselinu mléčnou, čímž si zachovávají svou trvanlivost.',
       'Salámy, které prošly fází namáční v alkoholu.',
     ],
     correctAnswer: 1,
@@ -1208,13 +1208,9 @@ export const fruitVegData = [
     correctAnswer: 1,
   },
   {
-    question: 'Jaký vitamin se nachází ve velkém množství v citrusových plodech, jako jsou pomeranče a citrony?',
-    answer: [
-      'Vitamin A',
-      'Vitamin B12',
-      'Vitamin C',
-      'Vitamin D',
-    ],
+    question:
+      'Jaký vitamin se nachází ve velkém množství v citrusových plodech, jako jsou pomeranče a citrony?',
+    answer: ['Vitamin A', 'Vitamin B12', 'Vitamin C', 'Vitamin D'],
     correctAnswer: 2,
   },
   {
@@ -1228,7 +1224,8 @@ export const fruitVegData = [
     correctAnswer: 2,
   },
   {
-    question: 'Jaký je zdravotní přínos konzumace listové zeleniny, jako je špenát nebo kapusta?',
+    question:
+      'Jaký je zdravotní přínos konzumace listové zeleniny, jako je špenát nebo kapusta?',
     answer: [
       'Zlepšuje chuť jídla.',
       'Pomáhá budovat svaly.',
@@ -1268,7 +1265,8 @@ export const fruitVegData = [
     correctAnswer: 1,
   },
   {
-    question: 'Jaký je přínos konzumace tmavě zelené zeleniny, jako je brokolice nebo špenát?',
+    question:
+      'Jaký je přínos konzumace tmavě zelené zeleniny, jako je brokolice nebo špenát?',
     answer: [
       'Zvyšuje inteligenci.',
       'Obsahuje vysoké množství železa a vápníku, které jsou důležité pro kosti a krev.',
@@ -1297,5 +1295,4 @@ export const fruitVegData = [
     ],
     correctAnswer: 0,
   },
-  
 ];
