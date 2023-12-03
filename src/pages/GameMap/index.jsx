@@ -39,7 +39,7 @@ export const GameMap = ({ data }) => {
   const [showModal, setShowModal] = useState(false);
   const [lastAnswerWasCorrect, setLastAnswerWasCorrect] = useState(null);
 
-  const [
+  const {
     food,
     setAnswer,
     answered,
@@ -48,7 +48,7 @@ export const GameMap = ({ data }) => {
     correctAnswers,
     answeredQuestion,
     isGameOver,
-  ] = useEvaluationHook(questionSet, array);
+  } = useEvaluationHook(questionSet, array);
 
   const currentButtonId = buttons[correctAnswers]?.id || 0;
   const { isVisible, isTextVisible, text, maskotRef, textRef, maskotImage } =
@@ -99,4 +99,3 @@ export const GameMap = ({ data }) => {
     </div>
   );
 };
-
