@@ -23,6 +23,7 @@ export const useEvaluationHook = (questionSet, array) => {
 
   const [isWin, setIsWin] = useState(false);
   const [isLost, setIsLost] = useState(false);
+  const [isGameOver, setIsGameOver] = useState('question');
 
   //definovani funkce, zda vyhral (musi byt definovano, nez pouzijeme), vraci true false
   const checkHasWon = () => {
@@ -58,11 +59,11 @@ export const useEvaluationHook = (questionSet, array) => {
     if (status) {
       setCorrectAnswers(correctAnswers + 1);
       if (checkHasWon()) {
-        setIsWin(true);
+        setIsGameOver('win');
         alert('Vyhral jsi');
       }
     } else if (checkHasLost()) {
-      setIsLost(true);
+      setIsGameOver('lost');
       alert('Nevyhral jsi');
     }
   };
@@ -91,5 +92,6 @@ export const useEvaluationHook = (questionSet, array) => {
     setIsLost,
     isWin,
     isLost,
+    isGameOver,
   ];
 };

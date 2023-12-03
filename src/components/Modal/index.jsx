@@ -1,5 +1,7 @@
 import './style.css';
 import jidlo from './img/food.png';
+import { ModalLost } from '../ModalLost';
+import { ModalWin } from '../ModalWin';
 
 export const Modal = ({
   toggleModal,
@@ -9,6 +11,9 @@ export const Modal = ({
   newQuestion,
   food,
   correctAnswers,
+  isGameOver,
+  setShowModal,
+  showModal,
 }) => {
   const closeModal = () => {
     toggleModal(false);
@@ -28,6 +33,13 @@ export const Modal = ({
     return 'button__answer';
   };
 
+  if (isGameOver === 'win') {
+    return <ModalWin close={closeModal} />;
+  }
+  if (isGameOver === 'lost') {
+    return <ModalLost close={closeModal} />;
+  }
+
   return (
     <div>
       <div className="modal">
@@ -44,8 +56,8 @@ export const Modal = ({
             {questionData.answer.map((answer, index) => (
               <div key={index}>
                 <div
-                   onClick={() => {
-                    if (!answered) { 
+                  onClick={() => {
+                    if (!answered) {
                       callback(index);
                     }
                   }}

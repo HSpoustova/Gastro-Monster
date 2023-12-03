@@ -48,19 +48,22 @@ export const GameMap = ({ data }) => {
     answered,
     setAnswered,
     questionData,
-    correctAnswers, // Toto je místo, kde se 'correctAnswers' získává
+    correctAnswers,
     answeredQuestion,
     setIsWin,
     setIsLost,
     isWin,
     isLost,
+    isGameOver,
   ] = useEvaluationHook(questionSet, array);
+
   const currentButtonId =
     correctAnswers !== undefined ? buttons[correctAnswers].id : 0;
-    const { isVisible, isTextVisible, text, maskotRef, textRef, maskotImage } = useMaskotMap({
+  const { isVisible, isTextVisible, text, maskotRef, textRef, maskotImage } =
+    useMaskotMap({
       delay: 400,
       currentButtonId,
-      isCorrectAnswer: lastAnswerWasCorrect
+      isCorrectAnswer: lastAnswerWasCorrect,
     });
   // const selectedAnswer = (selectedAnswerIndex) => {
   //   if (selectedAnswerIndex === questionData.correctAnswer) {
@@ -72,7 +75,7 @@ export const GameMap = ({ data }) => {
   const selectedAnswer = (selectedAnswerIndex) => {
     const isCorrect = selectedAnswerIndex === questionData.correctAnswer;
     setAnswer(isCorrect); // Stávající funkčnost zachována
-  
+
     // Nově přidané: Aktualizovat stav pro správnost odpovědi
     setLastAnswerWasCorrect(isCorrect);
   };
@@ -95,6 +98,7 @@ export const GameMap = ({ data }) => {
           {/* Použití maskotImage */}
         </div>
       </div>
+
       {showModal ? (
         <Modal
           toggleModal={setShowModal}
@@ -105,11 +109,11 @@ export const GameMap = ({ data }) => {
           food={food}
           correctAnswers={correctAnswers}
           answeredQuestion={answeredQuestion}
+          isGameOver={isGameOver}
+          setShowModal={setShowModal}
+          schowModal={showModal}
         />
       ) : null}
-
-      {isWin ? <ModalWin close={setIsWin} /> : null}
-      {isLost ? <ModalLost close={setIsLost} /> : null}
     </div>
   );
 };
