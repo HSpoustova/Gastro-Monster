@@ -87,7 +87,20 @@
   height: 50px;
   padding-top: 10px;
 }
-
+.button__answer {
+  background-image: url(./img/answer.png);
+  display: flex;
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
+  width: 650px;
+  height: 79px;
+  overflow: hidden;
+  white-space: normal;
+  text-align: center;
+  line-height: 1.2;
+  padding: 15px 30px 5px 30px
+}
 .button-answer--green {
   background-image: url(./img/right.png);
   display: flex;
@@ -96,10 +109,11 @@
   align-items: center;
   width: 650px;
   height: 83px;
-  white-space: nowrap;
   overflow: hidden;
   white-space: normal;
-  padding: 15px 30px 5px 30px;
+  text-align: center;
+  line-height: 1.2;
+  padding: 15px 30px 5px 30px
 }
 
 .button-answer--red {
@@ -110,8 +124,9 @@
   align-items: center;
   width: 650px;
   height: 83px;
-  white-space: nowrap;
   overflow: hidden;
   white-space: normal;
-  padding: 15px 30px 5px 30px;
+  text-align: center;
+  line-height: 1.2;
+  padding: 15px 30px 5px 30px
 }
