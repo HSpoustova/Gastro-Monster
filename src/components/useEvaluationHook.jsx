@@ -60,12 +60,10 @@ export const useEvaluationHook = (questionSet, array) => {
       if (checkHasWon()) {
         setIsWin(true);
         alert('Vyhral jsi');
-        window.location.reload(true);
       }
     } else if (checkHasLost()) {
       setIsLost(true);
-      alert('Nemas dostatecny pocet potravin.Prohral jsi');
-      window.location.reload(true);
+      alert('Nevyhral jsi');
     }
   };
 
@@ -88,9 +86,10 @@ export const useEvaluationHook = (questionSet, array) => {
     setAnswered,
     questionData,
     correctAnswers,
-    isWin,
-    isLost,
+    answeredQuestion,
     setIsWin,
     setIsLost,
+    isWin,
+    isLost,
   ];
 };
