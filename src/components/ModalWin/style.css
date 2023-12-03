@@ -14,7 +14,7 @@
   font-size: 1.3em;
   width: 900px;
   height: 550px;
-  background-image: linear-gradient(to bottom right, rgb(222, 61, 61), rgb(197, 123, 123));
+  background-image: linear-gradient(to bottom right, rgb(195, 246, 151), rgb(207, 240, 182));
   border-radius: 5px;
   padding: 20px;
   display: flex;
@@ -46,7 +46,8 @@
 
 .win {
   background-image: url(./img/win.png);
-  padding-top: 270px;
+  padding-top: 120px;
+  padding-right: 30px;
   font-size: 1.3em;
   background-size: cover;
   background-repeat: no-repeat;
@@ -54,8 +55,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 400px;
-  height: 400px;
+  width: 600px;
+  height: 430px;
 }
 
 

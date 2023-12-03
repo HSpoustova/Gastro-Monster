@@ -64,15 +64,11 @@ export const useEvaluationHook = (questionSet, array) => {
       const newCorrectAnswers = correctAnswers + 1;
       setCorrectAnswers(newCorrectAnswers);
   
-      // Kontrola, zda hráč vyhrál po každé správné odpovědi
       if (newCorrectAnswers >= 9) {
         setIsGameOver('win');
-        // Zde můžete volitelně přidat logiku pro zobrazení modálního okna pro výhru, pokud již není jinde
-        // Například pomocí callbacku nebo události
       }
     } else if (checkHasLost()) {
       setIsGameOver('lost');
-      // Zde můžete volitelně přidat logiku pro zobrazení modálního okna pro prohru, pokud již není jinde
     }
   };
 
@@ -83,7 +79,6 @@ export const useEvaluationHook = (questionSet, array) => {
   }, [answer]);
 
 useEffect(() => {
-  // Pokud hra neskončila a hráč neodpověděl, obnovíme otázku
   if (!answered && isGameOver === 'question') {
     updateQuestionData();
   }
