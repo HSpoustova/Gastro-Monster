@@ -5,8 +5,6 @@ import { useEvaluationHook } from '../../components/useEvaluationHook';
 import { useState } from 'react';
 import { Modal } from '../../components/Modal';
 import { useMaskotMap } from '../../components/useMaskotMap';
-import { ModalWin } from '../../components/ModalWin';
-import { ModalLost } from '../../components/ModalLost';
 
 const selectClass = (type, buttonObj) => {
   switch (type) {
@@ -52,8 +50,7 @@ export const GameMap = ({ data }) => {
     isGameOver,
   ] = useEvaluationHook(questionSet, array);
 
-  const currentButtonId =
-    correctAnswers !== undefined ? buttons[correctAnswers].id : 0;
+  const currentButtonId = buttons[correctAnswers]?.id || 0;
   const { isVisible, isTextVisible, text, maskotRef, textRef, maskotImage } =
     useMaskotMap({
       delay: 400,
@@ -106,17 +103,3 @@ export const GameMap = ({ data }) => {
   );
 };
 
-/*{buttons.map((buttonMap) => {
-        return (
-          <div key={buttonMap.id}>
-            <button
-              className={selectClass(type, buttonMap)}
-              key={buttonMap.id}
-              onClick={() => setShowModal(true)}
-              disabled={!(correctAnswers === buttonMap.id)}
-            >
-              {buttonMap.name}
-            </button>
-          </div>
-        );
-      })}*/

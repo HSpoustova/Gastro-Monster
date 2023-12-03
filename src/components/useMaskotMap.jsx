@@ -92,15 +92,19 @@ export const useMaskotMap = ({ delay, currentButtonId, isCorrectAnswer }) => {
       }
     }
   
-    // logika pro nastavení textu maskota
     if (isCorrectAnswer) {
-      if (currentButtonId >= 0 && currentButtonId < textyOtazek.length) {
+      // Pokud je currentButtonId 9 nebo vyšší, nebudou očekávány další texty pro správné odpovědi
+      if (currentButtonId < 9 && currentButtonId < textyOtazek.length) {
         setMaskotText(textyOtazek[currentButtonId]);
       }
     } else {
-      setMaskotText(textySpatnychOdpovedi[Math.floor(Math.random() * textySpatnychOdpovedi.length)]);
+      // Logika pro špatné odpovědi
+      if (currentButtonId < 9) {
+        setMaskotText(textySpatnychOdpovedi[Math.floor(Math.random() * textySpatnychOdpovedi.length)]);
+      }
     }
   }, [currentButtonId, isCorrectAnswer]);
+
 
   return { 
     isVisible, 

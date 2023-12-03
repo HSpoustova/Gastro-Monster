@@ -86,10 +86,6 @@ export const useEvaluationHook = (questionSet, array) => {
     questionData,
     correctAnswers,
     answeredQuestion,
-    setIsWin,
-    setIsLost,
-    isWin,
-    isLost,
     isGameOver,
   ];
 };
