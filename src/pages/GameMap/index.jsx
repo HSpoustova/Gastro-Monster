@@ -6,6 +6,8 @@ import { useState } from 'react';
 import { Modal } from '../../components/Modal';
 import { useMaskotMap } from '../../components/useMaskotMap';
 import MaskotAdultAngry from '../../components/Modal/img/maskot-adult-angry.png';
+import { ModalWin } from '../../components/ModalWin';
+import { ModalLost } from '../../components/ModalLost';
 
 const selectClass = (type, buttonObj) => {
   switch (type) {
@@ -48,6 +50,10 @@ export const GameMap = ({ data }) => {
     questionData,
     correctAnswers, // Toto je místo, kde se 'correctAnswers' získává
     answeredQuestion,
+    setIsWin,
+    setIsLost,
+    isWin,
+    isLost,
   ] = useEvaluationHook(questionSet, array);
   const currentButtonId =
     correctAnswers !== undefined ? buttons[correctAnswers].id : 0;
@@ -101,6 +107,9 @@ export const GameMap = ({ data }) => {
           answeredQuestion={answeredQuestion}
         />
       ) : null}
+
+      {isWin ? <ModalWin close={setIsWin} /> : null}
+      {isLost ? <ModalLost close={setIsLost} /> : null}
     </div>
   );
 };
