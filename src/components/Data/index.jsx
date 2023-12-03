@@ -587,6 +587,136 @@ export const bakeryData = [
     ],
     correctAnswer: 3,
   },
+  {
+    question: 'Proč je důležité jíst pečivo, které obsahuje celozrnnou mouku?',
+    answer: [
+      'Protože chutná lépe.',
+      'Protože obsahuje více vlákniny, která je dobrá pro naše trávení.',
+      'Protože je levnější.',
+      'Protože má méně kalorií.',
+    ],
+    correctAnswer: 1,
+  },
+
+  {
+    question: 'Co znamená, když je pečivo označeno jako "bez přidaného cukru"?',
+    answer: [
+      'Že je v něm více soli.',
+      'Že je v něm použit umělý sladidlo.',
+      'Že neobsahuje žádný přidaný cukr, ale může obsahovat přirozené cukry.',
+      'Že je to vhodné pro diabetiky.',
+    ],
+    correctAnswer: 2,
+  },
+
+  {
+    question: 'Proč bychom měli jíst pečivo s nízkým obsahem soli?',
+    answer: [
+      'Protože sůl způsobuje žízeň.',
+      'Protože méně soli pomáhá udržovat zdravý krevní tlak.',
+      'Protože sůl snižuje chuť k jídlu.',
+      'Protože pečivo bez soli je měkčí.',
+    ],
+    correctAnswer: 1,
+  },
+
+  {
+    question:
+      'Jaký je rozdíl mezi bílým a celozrnným chlebem z hlediska výživy?',
+    answer: [
+      'Celozrnný chléb obsahuje více cukru.',
+      'Bílý chléb je bohatší na vlákninu.',
+      'Celozrnný chléb obsahuje více vitamínů a minerálů.',
+      'Není žádný rozdíl.',
+    ],
+    correctAnswer: 2,
+  },
+
+  {
+    question: 'Proč je dobré jíst chléb s semínky?',
+    answer: [
+      'Protože chutná lépe.',
+      'Protože semínka přidávají extra vlákninu a zdravé tuky.',
+      'Protože dělá chléb těžší.',
+      'Protože semínka chleba barví.',
+    ],
+    correctAnswer: 1,
+  },
+
+  {
+    question: 'Co znamená, když je pečivo označeno jako "bohaté na bílkoviny"?',
+    answer: [
+      'Že obsahuje méně sacharidů.',
+      'Že je v něm více vody.',
+      'Že pomáhá s budováním svalů a opravou tkání.',
+      'Že je vhodné pouze pro sportovce.',
+    ],
+    correctAnswer: 2,
+  },
+
+  {
+    question: 'Proč bychom měli jíst pečivo, které obsahuje ořechy a semena?',
+    answer: [
+      'Protože to zlepšuje paměť.',
+      'Protože ořechy a semena poskytují zdravé tuky a proteiny.',
+      'Protože to dělá chléb křupavým.',
+      'Protože to snižuje cenu pečiva.',
+    ],
+    correctAnswer: 1,
+  },
+  {
+    question: 'Co znamená, když je pečivo označeno jako "bezlepkové"?',
+    answer: [
+      'Neobsahuje žádný cukr.',
+      'Je vyrobeno bez použití pšeničné mouky.',
+      'Neobsahuje žádné kvasnice.',
+      'Je vhodné pro lidi s alergií na ořechy.',
+    ],
+    correctAnswer: 1,
+  },
+  {
+    question:
+      'Jaký je přínos konzumace chleba s vysokým obsahem celozrnných zrn pro děti?',
+    answer: [
+      'Zlepšuje chuť k jídlu.',
+      'Poskytuje potřebnou energii a živiny pro růst.',
+      'Způsobuje rychlý nárůst váhy.',
+      'Zlepšuje dovednosti ve škole.',
+    ],
+    correctAnswer: 1,
+  },
+  {
+    question: 'Proč je dobré při výběru pečiva zvažovat obsah tuku?',
+    answer: [
+      'Vyšší obsah tuku zlepšuje chuť.',
+      'Některé tuky jsou zdravé, ale příliš mnoho může být nezdravé.',
+      'Tuky snižují cenu pečiva.',
+      'Pečivo s méně tuky se rychleji kazí.',
+    ],
+    correctAnswer: 1,
+  },
+  {
+    question:
+      'Jaký význam má přidání ovoce, jako jsou rozinky nebo sušené švestky, do pečiva?',
+    answer: [
+      'Přidává pečivu přirozenou sladkost a zdroj energie.',
+      'Zvyšuje obsah bílkovin v pečivu.',
+      'Udělá pečivo méně křupavé.',
+      'Sníží obsah vlákniny v pečivu.',
+    ],
+    correctAnswer: 0,
+  },
+  {
+    question:
+      'Proč je důležité omezit konzumaci pečiva s vysokým obsahem cukru?',
+    answer: [
+      'Způsobuje více energie.',
+      'Může vést k nárůstu váhy a zdravotním problémům.',
+      'Dělá pečivo méně chutné.',
+      'Zvyšuje obsah bílkovin.',
+    ],
+    correctAnswer: 1,
+  },
 ];
 
 export const meatData = [
@@ -787,6 +917,120 @@ export const meatData = [
     ],
     correctAnswer: 3,
   },
+  {
+    question: 'Co je hlavní zdroj bílkovin v masných výrobcích?',
+    answer: ['Tuky', 'Sacharidy', 'Bílkoviny', 'Vitamíny'],
+    correctAnswer: 2,
+  },
+
+  {
+    question: 'Proč je důležité jíst maso s nízkým obsahem tuku?',
+    answer: [
+      'Protože má lepší chuť.',
+      'Protože pomáhá předcházet obezitě a srdečním chorobám.',
+      'Protože se rychleji připravuje.',
+      'Protože je levnější.',
+    ],
+    correctAnswer: 1,
+  },
+  {
+    question: 'Jaký je rozdíl mezi čerstvým masem a uzeným masem?',
+    answer: [
+      'Uzené maso má vyšší obsah bílkovin.',
+      'Čerstvé maso je vždy zdravější.',
+      'Uzené maso prošlo procesem uzení, který mu dodává specifickou chuť a konzervuje jej.',
+      'Čerstvé maso má nižší obsah soli.',
+    ],
+    correctAnswer: 2,
+  },
+  {
+    question: 'Proč je důležité omezit konzumaci zpracovaného masa?',
+    answer: [
+      'Protože má méně vitamínů.',
+      'Protože obsahuje konzervanty a může zvyšovat riziko některých nemocí.',
+      'Protože je dražší.',
+      'Protože má nižší obsah bílkovin.',
+    ],
+    correctAnswer: 1,
+  },
+  {
+    question: 'Jaký je hlavní rozdíl mezi bílým a červeným masem?',
+    answer: [
+      'Bílé maso je vždy kuřecí.',
+      'Červené maso obsahuje více železa.',
+      'Bílé maso je méně chutné.',
+      'Červené maso je méně zdravé.',
+    ],
+    correctAnswer: 1,
+  },
+  {
+    question:
+      'Proč bychom měli jíst maso, které obsahuje omega-3 mastné kyseliny?',
+    answer: [
+      'Protože pomáhá zlepšovat paměť.',
+      'Protože nechutná veganům',
+      'Protože pomáhá udržovat zdravé srdce a cévy.',
+      'Protože snižuje obsah bílkovin.',
+    ],
+    correctAnswer: 2,
+  },
+  {
+    question: 'Jaký je přínos konzumace ryb ve stravě?',
+    answer: [
+      'Ryby jsou dobrým zdrojem vitamínu C.',
+      'Ryby pomáhají budovat svalovou hmotu.',
+      'Ryby jsou bohaté na omega-3 mastné kyseliny a bílkoviny.',
+      'Ryby jsou srandovní.',
+    ],
+    correctAnswer: 2,
+  },
+  {
+    question: 'Proč bychom měli omezit konzumaci slaniny a salámů?',
+    answer: [
+      'Protože jsou příliš slané.',
+      'Protože obsahují vysoký podíl nasycených tuků a soli.',
+      'Protože se rychle kazí.',
+      'Protože jsou drahé a hnusné.',
+    ],
+    correctAnswer: 1,
+  },
+  {
+    question:
+      'Proč je důležité jíst maso, které bylo řádně prošetřeno a má certifikaci zdravotní nezávadnosti?',
+    answer: [
+      'Protože takové maso má lepší chuť.',
+      'Protože zabraňuje riziku potravinových infekcí a nemocí.',
+      'Protože je levnější.',
+      'Protože má vyšší obsah bílkovin.',
+    ],
+    correctAnswer: 1,
+  },
+  {
+    question: 'Co znamená, když je maso označeno jako "bio"?',
+    answer: [
+      'Že je méně chutné.',
+      'Že pochází ze zvířat chovaných v přirozenějších podmínkách bez použití hormonů a antibiotik.',
+      'Že má více tuku.',
+      'Že je rychleji připravené k jídlu.',
+    ],
+    correctAnswer: 1,
+  },
+  {
+    question:
+      'Jaký vitamin se přirozeně nachází ve velkém množství v červeném mase?',
+    answer: ['Vitamin C', 'Vitamin B12', 'Vitamin D', 'Vitamin E'],
+    correctAnswer: 1,
+  },
+  {
+    question: 'Co je to marinování masa a jaký má vliv?',
+    answer: [
+      'Způsob vaření masa, čímž se zvyšuje jeho měkkost.',
+      'Proces nakládání masa do solného roztoku, který zvyšuje jeho trvanlivost.',
+      'Proces namáčení masa v směsi koření a oleje, což zlepšuje chuť a šťavnatost.',
+      'Způsob mražení masa, který zabraňuje jeho zkáze.',
+    ],
+    correctAnswer: 2,
+  },
 ];
 
 export const fruitVegData = [
@@ -953,4 +1197,105 @@ export const fruitVegData = [
     answer: ['Sůl', 'Cukr', 'Bělidlo', 'Kyselina citronová'],
     correctAnswer: 3,
   },
+  {
+    question: 'Proč je důležité jíst ovoce a zeleninu každý den?',
+    answer: [
+      'Protože jsou chutné.',
+      'Protože obsahují důležité vitamíny a minerály.',
+      'Protože jsou levné.',
+      'Protože mají pěkné barvy.',
+    ],
+    correctAnswer: 1,
+  },
+  {
+    question: 'Jaký vitamin se nachází ve velkém množství v citrusových plodech, jako jsou pomeranče a citrony?',
+    answer: [
+      'Vitamin A',
+      'Vitamin B12',
+      'Vitamin C',
+      'Vitamin D',
+    ],
+    correctAnswer: 2,
+  },
+  {
+    question: 'Proč je mrkev považována za dobrý zdroj vitamínu A?',
+    answer: [
+      'Protože je oranžová.',
+      'Protože je sladká.',
+      'Protože obsahuje beta-karoten, který tělo přeměňuje na vitamín A.',
+      'Protože je tvrdá.',
+    ],
+    correctAnswer: 2,
+  },
+  {
+    question: 'Jaký je zdravotní přínos konzumace listové zeleniny, jako je špenát nebo kapusta?',
+    answer: [
+      'Zlepšuje chuť jídla.',
+      'Pomáhá budovat svaly.',
+      'Je dobrá pro zrak a posiluje imunitní systém.',
+      'Zvyšuje rychlost běhu.',
+    ],
+    correctAnswer: 2,
+  },
+  {
+    question: 'Proč bychom měli jíst různé barvy ovoce a zeleniny?',
+    answer: [
+      'Aby jídlo vypadalo hezky.',
+      'Každá barva představuje různé živiny a zdravotní přínosy.',
+      'Různé barvy mají různé chutě.',
+      'Nemá to žádný význam.',
+    ],
+    correctAnswer: 1,
+  },
+  {
+    question: 'Jaký je hlavní zdravotní přínos jahod a malin?',
+    answer: [
+      'Pomáhají zlepšovat paměť.',
+      'Jsou dobré pro trávení.',
+      'Obsahují hodně vitamínu C a antioxidanty.',
+      'Zlepšují náladu.',
+    ],
+    correctAnswer: 2,
+  },
+  {
+    question: 'Proč bychom měli omezit příjem ovocných šťáv?',
+    answer: [
+      'Protože jsou kyselé.',
+      'Protože obsahují hodně přidaného cukru a méně vlákniny než celé ovoce.',
+      'Protože jsou drahé.',
+      'Protože způsobují zimnici.',
+    ],
+    correctAnswer: 1,
+  },
+  {
+    question: 'Jaký je přínos konzumace tmavě zelené zeleniny, jako je brokolice nebo špenát?',
+    answer: [
+      'Zvyšuje inteligenci.',
+      'Obsahuje vysoké množství železa a vápníku, které jsou důležité pro kosti a krev.',
+      'Sníží riziko nachlazení.',
+      'Pomáhá při hubnutí.',
+    ],
+    correctAnswer: 1,
+  },
+  {
+    question: 'Proč bychom měli jíst banány?',
+    answer: [
+      'Protože jsou dobrou přirozenou sladkostí.',
+      'Protože obsahují draslík, který je důležitý pro zdraví srdce a svalů.',
+      'Protože jsou snadno přenosné.',
+      'Protože pomáhají zlepšit paměť.',
+    ],
+    correctAnswer: 1,
+  },
+  {
+    question: 'Proč je dobré jíst jablka?',
+    answer: [
+      'Protože pomáhají zlepšovat trávení díky obsahu vlákniny.',
+      'Protože zvyšují energetickou hladinu.',
+      'Protože pomáhají zlepšovat paměť.',
+      'Protože jsou nízkokalorické.',
+    ],
+    correctAnswer: 0,
+  },
+  
 ];
