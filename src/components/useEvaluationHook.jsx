@@ -1,7 +1,5 @@
 import { useEffect, useState } from 'react';
 import { GetRandomObject } from './GetRandomObject';
-import { ModalLost } from './ModalLost';
-import { ModalWin } from './ModalWin';
 
 export const useEvaluationHook = (questionSet, array) => {
   const [questionData, setQuestionData] = useState({
@@ -12,8 +10,6 @@ export const useEvaluationHook = (questionSet, array) => {
 
   //pocatecni stav potravin
   const [food, setFood] = useState(15);
-  //pocatecni stav pocitani otazek
-  const [answeredQuestion, setAnsweredQuestion] = useState(0);
   // jaka odpoved byla zadana (index odpovedi od uzivatele)
   const [answer, setAnswer] = useState(-1);
   //pocatecni stav spravnych odpovedi
@@ -24,8 +20,8 @@ export const useEvaluationHook = (questionSet, array) => {
   const [isGameOver, setIsGameOver] = useState('question');
 
   //definovani funkce, zda vyhral (musi byt definovano, nez pouzijeme), vraci true false
-  const checkHasWon = () => {
-    return correctAnswers >= 9;
+  const checkHasWon = (updatedCorrect) => {
+    return updatedCorrect === 10;
   };
   //definovani podminky, zda prohral (musi byt definovano, nez pouzijeme) vraci true nebo false
   const checkHasLost = () => {
@@ -50,24 +46,25 @@ export const useEvaluationHook = (questionSet, array) => {
   - obnovi stranku */
 
   const handleAnswer = (status) => {
-    // Pokud hra skončila, nebudeme pokračovat v nastavování dalších otázek
-    if (isGameOver !== 'question') {
+    // Pokud hra skončila, nebudeme pokračovat v nastavování dalších otázek - zbytečný, pokud dostávám odpověď, hra běží
+    /*if (isGameOver !== 'question') {
       return;
-    }
+    }*/
 
     setAnswered(true);
     setAnswer(-1);
-    setAnsweredQuestion(answeredQuestion + 1);
     setFood(food - 1);
 
     if (status) {
       const newCorrectAnswers = correctAnswers + 1;
       setCorrectAnswers(newCorrectAnswers);
 
-      if (newCorrectAnswers >= 9) {
+      if (checkHasWon(newCorrectAnswers)) {
         setIsGameOver('win');
       }
-    } else if (checkHasLost()) {
+      return;
+    }
+    if (checkHasLost()) {
       setIsGameOver('lost');
     }
   };
@@ -91,7 +88,6 @@ export const useEvaluationHook = (questionSet, array) => {
     setAnswered,
     questionData,
     correctAnswers,
-    answeredQuestion,
     isGameOver,
   };
 };

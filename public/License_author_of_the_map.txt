@@ -1,0 +1,5 @@
+Creator of the tileset using for maps:
+
+"32x32px orthogonal tileset" by Ivan Voirol licensed CC-BY 4.0: https://opengameart.org/content/slates-32x32px-orthogonal-tileset-by-ivan-voirol
+
+No changes have made to the work.

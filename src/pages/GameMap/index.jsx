@@ -46,7 +46,6 @@ export const GameMap = ({ data }) => {
     setAnswered,
     questionData,
     correctAnswers,
-    answeredQuestion,
     isGameOver,
   } = useEvaluationHook(questionSet, array);
 
@@ -57,7 +56,7 @@ export const GameMap = ({ data }) => {
       currentButtonId,
       isCorrectAnswer: lastAnswerWasCorrect,
     });
-
+  //setAnswer expects index of the answer
   const selectedAnswer = (selectedAnswerIndex) => {
     const isCorrect = selectedAnswerIndex === questionData.correctAnswer;
     setAnswer(isCorrect);
@@ -67,11 +66,13 @@ export const GameMap = ({ data }) => {
 
   return (
     <div className={selectMap(type)}>
-      <div
-        className={`avatar ${selectClass(type, buttons[correctAnswers])}`}
-        key={buttons[correctAnswers].id}
-        onClick={() => setShowModal(true)}
-      ></div>
+      {correctAnswers < 10 ? (
+        <div
+          className={`avatar ${selectClass(type, buttons[correctAnswers])}`}
+          key={buttons[correctAnswers].id}
+          onClick={() => setShowModal(true)}
+        ></div>
+      ) : null}
       <div className="maskot-container">
         {isTextVisible && (
           <div ref={textRef} className="maskot-text-bubble">
@@ -91,8 +92,6 @@ export const GameMap = ({ data }) => {
           answered={answered}
           newQuestion={setAnswered}
           food={food}
-          correctAnswers={correctAnswers}
-          answeredQuestion={answeredQuestion}
           isGameOver={isGameOver}
         />
       ) : null}

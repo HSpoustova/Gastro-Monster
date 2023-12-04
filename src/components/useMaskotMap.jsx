@@ -19,39 +19,38 @@ const textyOtazek = [
   'Salám by nebyl?',
   'Dej mi ještě!',
   'Výborné!',
-  'Juchůů!'
+  'Juchůů!',
 ];
 const textySpatnychOdpovedi = [
- 'To je špatně..',
- 'Jsem chudinka!',
- 'Tak dlouho bez jídla.',
- 'Ach jo..',
- 'Neee!',
- 'Makovče!',
- 'Chci jíst!',
- 'Břísko kručí!',
- 'Oprav se.',
- 'Umíram hlady!',
- 'Bude někdy jídlo?',
- 'Troubo',
+  'To je špatně..',
+  'Jsem chudinka!',
+  'Tak dlouho bez jídla.',
+  'Ach jo..',
+  'Neee!',
+  'Makovče!',
+  'Chci jíst!',
+  'Břísko kručí!',
+  'Oprav se.',
+  'Umíram hlady!',
+  'Bude někdy jídlo?',
+  'Troubo',
 ];
 
 export const useMaskotMap = ({ delay, currentButtonId, isCorrectAnswer }) => {
   const [isVisible, setIsVisible] = useState(false);
   const [isTextVisible, setIsTextVisible] = useState(false);
-  const [maskotImage, setMaskotImage] = useState(MaskotEggHappy); 
-  const [maskotText, setMaskotText] = useState(textyOtazek[0]); 
-  
+  const [maskotImage, setMaskotImage] = useState(MaskotEggHappy);
+  const [maskotText, setMaskotText] = useState(textyOtazek[0]);
+
   const maskotRef = useRef(null);
   const textRef = useRef(null);
 
   useEffect(() => {
-
     const timerMaskot = setTimeout(() => {
       setIsVisible(true);
     }, delay);
 
-    const textDelay = delay + 1500; 
+    const textDelay = delay + 1500;
     const timerBubble = setTimeout(() => {
       setIsTextVisible(true);
     }, textDelay);
@@ -64,10 +63,10 @@ export const useMaskotMap = ({ delay, currentButtonId, isCorrectAnswer }) => {
 
   useEffect(() => {
     if (isCorrectAnswer === null) {
-      setMaskotImage(MaskotEggNeutral); 
+      setMaskotImage(MaskotEggNeutral);
       return;
     }
-  
+
     if (isCorrectAnswer) {
       // Obrázky pro správné odpovědi
       if (currentButtonId >= 7) {
@@ -91,7 +90,7 @@ export const useMaskotMap = ({ delay, currentButtonId, isCorrectAnswer }) => {
         setMaskotImage(MaskotEggSad);
       }
     }
-  
+
     if (isCorrectAnswer) {
       // Pokud je currentButtonId 9 nebo vyšší, nebudou očekávány další texty pro správné odpovědi
       if (currentButtonId < 9 && currentButtonId < textyOtazek.length) {
@@ -100,18 +99,21 @@ export const useMaskotMap = ({ delay, currentButtonId, isCorrectAnswer }) => {
     } else {
       // Logika pro špatné odpovědi
       if (currentButtonId < 9) {
-        setMaskotText(textySpatnychOdpovedi[Math.floor(Math.random() * textySpatnychOdpovedi.length)]);
+        setMaskotText(
+          textySpatnychOdpovedi[
+            Math.floor(Math.random() * textySpatnychOdpovedi.length)
+          ],
+        );
       }
     }
   }, [currentButtonId, isCorrectAnswer]);
 
-
-  return { 
-    isVisible, 
-    maskotRef, 
-    isTextVisible, 
-    textRef, 
-    text: maskotText, 
-    maskotImage, 
+  return {
+    isVisible,
+    maskotRef,
+    isTextVisible,
+    textRef,
+    text: maskotText,
+    maskotImage,
   };
 };

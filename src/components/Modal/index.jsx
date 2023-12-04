@@ -10,10 +10,7 @@ export const Modal = ({
   answered,
   newQuestion,
   food,
-  correctAnswers,
   isGameOver,
-  setShowModal,
-  showModal,
 }) => {
   const closeModal = () => {
     toggleModal(false);

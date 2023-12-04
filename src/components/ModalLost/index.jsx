@@ -13,10 +13,11 @@ export const ModalLost = ({ close }) => {
     <div>
       <div className="modal">
         <div className="modal-content-again-lost">
-          <div className="lost"> Prohrál jsi
-            </div> 
+          <div className="lost"> Prohrál jsi</div>
           <div className="close-again">
-            <div className="again-btn" onClick={closeModal}>Hrát znovu</div>
+            <div className="again-btn" onClick={closeModal}>
+              Hrát znovu
+            </div>
           </div>
         </div>
       </div>

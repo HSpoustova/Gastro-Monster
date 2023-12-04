@@ -3,16 +3,16 @@ export const dairyData = [
     question:
       'Co znamená, když je na krabici mléka napsáno, že je "trvanlivé"?',
     answer: [
-      'Mléko, které déle vydrží otevřené v lednici.',
-      'Mléko, u kterého bylo dosaženo prodloužení doby trvanlivosti ošetřením vysokou teplotou.',
-      'Mléko, které je hustší než běžné mléko a proto déle vydrží',
-      'Mléko, které je možné skladovat po neomezeně dlouhou dobu.',
+      'Mléko déle vydrží otevřené v lednici.',
+      'U mléka bylo dosaženo prodloužení doby trvanlivosti ošetřením vysokou teplotou.',
+      'Mléko je hustší než běžné mléko a proto déle vydrží',
+      'Mléko je možné skladovat po neomezeně dlouhou dobu.',
     ],
     correctAnswer: 1,
   },
 
   {
-    question: 'Co obsahuje mléko jako zdroj bílkovin?',
+    question: 'Jak se jmenuje bílkovina v mléce?',
     answer: ['Kasein', 'Laktóza', 'Syrovátka', 'Kreatin'],
     correctAnswer: 0,
   },
@@ -20,22 +20,22 @@ export const dairyData = [
   {
     question: 'Co znamená, když je na láhvi mléka napsáno, že je "čerstvé"?',
     answer: [
-      'Mléko, které nebylo nijak tepelně ošetřeno.',
-      'Mléko, které se do obchodu dostalo do 3 dnů od nadojení.',
-      'Mléko, které má čerstvou chuť a jsou v něm cítit rozkvetlé louky.',
-      'Jako „čerstvé“ mléko lze označit mléko, které nebylo ošetřeno teplotou vyšší než 125 °C.',
+      'Mléko nebylo nijak tepelně ošetřeno.',
+      'Mléko se do obchodu dostalo do 3 dnů od nadojení.',
+      'Mléko má čerstvou chuť a jsou v něm cítit rozkvetlé louky.',
+      'Jako „čerstvé“ mléko lze označit mléko, které nebylo ošetřeno teplotou vyšší než 125°C.',
     ],
     correctAnswer: 3,
   },
 
   {
     question:
-      'Proč se mléko teplně ošetřuje (zahřívá na vysoké teploty) před dalším zpracováním?',
+      'Proč se mléko tepelně ošetřuje (zahřívá na vysoké teploty) před dalším zpracováním?',
     answer: [
       'Tepelné ošetření je potřeba pro zachování tekutosti mléka.',
       'Odstraňuje z mléka všechny nežádoucí pachy.',
       'Slouží k odstranění nežádoucích mikroorganismů.',
-      'Pomáhá, aby mléko nebylo před zpracováním studené.',
+      'Ohřátí pomáhá, aby mléko nebylo před zpracováním studené.',
     ],
     correctAnswer: 2,
   },
@@ -43,7 +43,7 @@ export const dairyData = [
   {
     question: 'Jaké přídatné látky se mohou přidávat do mléka?',
     answer: [
-      'Mohou se přidávat konzervanty pro delší trvanlivost.',
+      'Mohou se přidávat konzervanty pro prodloužení trvanlivosti.',
       'Mohou se přidávat konzervatny a barviva pro udržení bílé barvy.',
       'Nelze přidávat pouze zahušťovadla, ostatní přídatné látky jsou povolené.',
       'Do mléka se žádné přídatné látky dávat nesmí.',
@@ -67,7 +67,7 @@ export const dairyData = [
     answer: [
       'Tavením sýra na slunci.',
       'Smícháním sýra s vařící vodou.',
-      'Tepelným zpracovaním sýra za přídavku tavicích solí.',
+      'Tepelným zpracovaním sýra za přídavku tavících solí.',
       'Sýr se opaluje letlampou.',
     ],
     correctAnswer: 2,
@@ -78,7 +78,7 @@ export const dairyData = [
     answer: [
       'Sladký nápoj získaný ředěním mléka cukrem a vodou.',
       'Kvašený mléčný nápoj původem z Kavkazu.',
-      'Mléčný nápoj podávaný jen s čajem.',
+      'Mléčný sladký nápoj podávaný jen s čajem.',
       'Mléčný nápoj podávaný jen s kávou.',
     ],
     correctAnswer: 1,
@@ -89,7 +89,7 @@ export const dairyData = [
     answer: [
       'Mléčným kysáním mléka pomocí mléčných mikroorganismů.',
       'Kvašením mléka pomocí kvasinek.',
-      'Přídáním jogurtových zahušťovadel.',
+      'Přidáním zahušťovadel.',
     ],
     correctAnswer: 0,
   },
@@ -180,9 +180,9 @@ export const dairyData = [
     correctAnswer: 2,
   },
   {
-    question: 'Co to jsou mlékarenské kultury?',
+    question: 'Co jsou mlékarenské kultury?',
     answer: [
-      'Jsou to užitečné bakterie, díky kterým získavají mléčné výrobky svou, chuť, vůni a kozistenci.',
+      'Jsou to užitečné bakterie, díky kterým získávají mléčné výrobky svou, chuť, vůni a konzistenci.',
       'Jsou to bakterie, které se rozmnožují pouze v mlékárně. ',
       'Sada pravidel, které dodržují pracovníci v mlékárně.',
     ],
@@ -200,7 +200,7 @@ export const dairyData = [
   },
 
   {
-    question: 'Které z těchto potravin je nejlepším zdrojem vápníku?',
+    question: 'Která z těchto potravin je nejlepším zdrojem vápníku?',
     answer: ['Pomerančový džus', 'Mléčná čokoláda', 'Sýr', 'Kukuřičné lupínky'],
     correctAnswer: 2,
   },
@@ -262,12 +262,12 @@ export const dairyData = [
     correctAnswer: 2,
   },
   {
-    question: 'Jaký je hlavní rozdíl mezi plnotučeným a odstředěným mlékem?',
+    question: 'Jaký je hlavní rozdíl mezi plnotučným a odstředěným mlékem?',
     answer: [
       'Odstředěné mléko je více zahřívané.',
       'Plnotučné mléko má více vitamínů.',
       'Odstředěné mléko má do 0,5 % tuku.',
-      'Polotučné mléko má více cukru.',
+      'Plnotučné mléko má více cukru.',
     ],
     correctAnswer: 2,
   },
@@ -279,11 +279,11 @@ export const dairyData = [
   },
 
   {
-    question: 'Co je to homogenizace mléka?',
+    question: 'Co je homogenizace mléka?',
     answer: [
       'Proces přidání vitamínů do mléka.',
       'Proces rozbití tukových částic na menší částice.',
-      'Proces zahřívání mléka na vyšší teplotu k zabíjení bakterií.',
+      'Proces zahřívání mléka na vyšší teplotu zabíjející bakterie.',
       'Proces odstranění nečistot z mléka.',
     ],
     correctAnswer: 1,
@@ -295,7 +295,7 @@ export const dairyData = [
       'Vápník a železo.',
       'Zinek a hořčík.',
       'Sodík a draslík.',
-      'Vápník a draslík',
+      'Vápník a draslík.',
     ],
     correctAnswer: 3,
   },
@@ -324,10 +324,10 @@ export const dairyData = [
   {
     question: 'Jaký je rozdíl mezi mlékem a smetanou?',
     answer: [
-      'V obsah tuku.',
+      'V obsahu tuku.',
       'V obsahu bílkovin.',
-      'V obsah vápníku.',
-      'V obsah vitamínů.',
+      'V obsahu vápníku.',
+      'V obsahu vitamínů.',
     ],
     correctAnswer: 0,
   },
@@ -337,7 +337,7 @@ export const dairyData = [
     answer: [
       'Mléko, které bylo vymraženo.',
       'Mléko, které bylo zahuštěno.',
-      'Mléko, které bylo odstraněno tukem.',
+      'Mléko, kterému byl odstraněn tuk.',
       'Mléko, které bylo zbaveno vody.',
     ],
     correctAnswer: 3,
@@ -346,8 +346,8 @@ export const dairyData = [
   {
     question: 'Co je syrové mléko?',
     answer: [
-      'Mléko, které bylo odstraněno tukem.',
-      'Mléko, které bylo vysušeno.',
+      'Mléko, kterému byl odstraněn tuk.',
+      'Mléko, které bylo zbaveno vody.',
       'Mléko, které bylo fermentováno.',
       'Mléko, které nebylo tepelně zpracováno.',
     ],
@@ -381,7 +381,7 @@ export const bakeryData = [
     answer: [
       'Typ mouky',
       'Rostlinný olej',
-      'Mikroorganismus používaný k vykvašení těsta',
+      'Mikroorganismus používaný k vykvašení těsta.',
       'Sladidlo',
     ],
     correctAnswer: 2,
@@ -440,7 +440,7 @@ export const bakeryData = [
   {
     question: 'Co je to vedení těsta "na záraz"?',
     answer: [
-      'Droždí se přidá do pšeničného těsta ve chvíli, kdy zbytek těsta už je smíchaný.',
+      'Droždí se přidá do pšeničného těsta ve chvíli, kdy zbytek těsta je už smíchaný.',
       'Přímé vedení těsta, všechny suroviny se smíchají s droždím v jednom kroku.',
       'Hotové těsto se zarazí do ošatky a nechá se kynout.',
     ],
@@ -461,8 +461,8 @@ export const bakeryData = [
   {
     question: 'Co je to štrejchovka?',
     answer: [
-      'Tyč, kterou se v peci píchá do chleba, zda je již hotový.',
-      'Lopata, kterou se používá na sázení bochníků do pece.',
+      'Tyč, kterou se v peci kontroluje chleba, zda je již hotový.',
+      'Lopata, která se používá na sázení bochníků do pece.',
       'Smetáček na ometání mouky z pečiva před vsazením do pece.',
       'Nůž, kterým se nařezává těsto před vsazením do pece.',
     ],
@@ -591,7 +591,7 @@ export const bakeryData = [
     question: 'Proč je důležité jíst pečivo, které obsahuje celozrnnou mouku?',
     answer: [
       'Protože chutná lépe.',
-      'Protože obsahuje více vlákniny, která je dobrá pro naše trávení.',
+      'Protože obsahuje více vlákniny.',
       'Protože je levnější.',
       'Protože má méně kalorií.',
     ],
@@ -599,12 +599,12 @@ export const bakeryData = [
   },
 
   {
-    question: 'Co znamená, když je pečivo označeno jako "bez přidaného cukru"?',
+    question: 'Co znamená, když je pečivo označeno "bez přidaného cukru"?',
     answer: [
-      'Že je v něm více soli.',
-      'Že je v něm použit umělý sladidlo.',
-      'Že neobsahuje žádný přidaný cukr, ale může obsahovat přirozené cukry.',
-      'Že je to vhodné pro diabetiky.',
+      'Je v něm více soli.',
+      'Je v něm použité umělé sladidlo.',
+      'Neobsahuje přidaný cukr, ale může obsahovat přirozeně vyskytující se cukry.',
+      'Je to vhodné pro diabetiky.',
     ],
     correctAnswer: 2,
   },
@@ -633,7 +633,7 @@ export const bakeryData = [
   },
 
   {
-    question: 'Proč je dobré jíst chléb s semínky?',
+    question: 'Proč je dobré jíst chléb se semínky?',
     answer: [
       'Protože chutná lépe.',
       'Protože semínka přidávají extra vlákninu a zdravé tuky.',
@@ -644,12 +644,13 @@ export const bakeryData = [
   },
 
   {
-    question: 'Co znamená, když je pečivo označeno jako "bohaté na bílkoviny"?',
+    question:
+      'Co znamená, když je pečivo označeno, že má vysoký obsah bílkovin"?',
     answer: [
-      'Že obsahuje méně sacharidů.',
-      'Že je v něm více vody.',
-      'Že pomáhá s budováním svalů a opravou tkání.',
-      'Že je vhodné pouze pro sportovce.',
+      'Obsahuje méně sacharidů.',
+      'Osahuje více vody.',
+      'Bílkoviny představují alespoň 20 % energetické hodnoty potraviny.',
+      'Je vhodné pouze pro sportovce.',
     ],
     correctAnswer: 2,
   },
@@ -657,63 +658,10 @@ export const bakeryData = [
   {
     question: 'Proč bychom měli jíst pečivo, které obsahuje ořechy a semena?',
     answer: [
-      'Protože to zlepšuje paměť.',
-      'Protože ořechy a semena poskytují zdravé tuky a proteiny.',
-      'Protože to dělá chléb křupavým.',
-      'Protože to snižuje cenu pečiva.',
-    ],
-    correctAnswer: 1,
-  },
-  {
-    question: 'Co znamená, když je pečivo označeno jako "bezlepkové"?',
-    answer: [
-      'Neobsahuje žádný cukr.',
-      'Je vyrobeno bez použití pšeničné mouky.',
-      'Neobsahuje žádné kvasnice.',
-      'Je vhodné pro lidi s alergií na ořechy.',
-    ],
-    correctAnswer: 1,
-  },
-  {
-    question:
-      'Jaký je přínos konzumace chleba s vysokým obsahem celozrnných zrn pro děti?',
-    answer: [
-      'Zlepšuje chuť k jídlu.',
-      'Poskytuje potřebnou energii a živiny pro růst.',
-      'Způsobuje rychlý nárůst váhy.',
-      'Zlepšuje dovednosti ve škole.',
-    ],
-    correctAnswer: 1,
-  },
-  {
-    question: 'Proč je dobré při výběru pečiva zvažovat obsah tuku?',
-    answer: [
-      'Vyšší obsah tuku zlepšuje chuť.',
-      'Některé tuky jsou zdravé, ale příliš mnoho může být nezdravé.',
-      'Tuky snižují cenu pečiva.',
-      'Pečivo s méně tuky se rychleji kazí.',
-    ],
-    correctAnswer: 1,
-  },
-  {
-    question:
-      'Jaký význam má přidání ovoce, jako jsou rozinky nebo sušené švestky, do pečiva?',
-    answer: [
-      'Přidává pečivu přirozenou sladkost a zdroj energie.',
-      'Zvyšuje obsah bílkovin v pečivu.',
-      'Udělá pečivo méně křupavé.',
-      'Sníží obsah vlákniny v pečivu.',
-    ],
-    correctAnswer: 0,
-  },
-  {
-    question:
-      'Proč je důležité omezit konzumaci pečiva s vysokým obsahem cukru?',
-    answer: [
-      'Způsobuje více energie.',
-      'Může vést k nárůstu váhy a zdravotním problémům.',
-      'Dělá pečivo méně chutné.',
-      'Zvyšuje obsah bílkovin.',
+      'Zlepšuje to paměť.',
+      'Protože ořechy a semena poskytují zdravé tuky a bílkoviny.',
+      'Pečivo je křupavější.',
+      'Je to módní.',
     ],
     correctAnswer: 1,
   },
@@ -735,7 +683,7 @@ export const meatData = [
     question: 'Co je to "maso pro výsek"?',
     answer: [
       'Je to maso určené k likvidaci.',
-      'Je to maso rozdělené na menší části určené pro prodej v obchodech, např. kotleta, plecko, kýta, žebra apod.',
+      'Je to maso rozdělené na menší části určené pro prodej v obchodech, např. kotleta, plecko, kýta apod.',
       'Maso, které si nechávají řezníci a prodávají jej pod pultem.',
       'Maso určené výhradně pro zpracování ve výrobě.',
     ],
@@ -743,7 +691,7 @@ export const meatData = [
   },
 
   {
-    question: 'Jaký druh masa je nejčastěji používán při výrobě salámů?',
+    question: 'Jaký druh masa se nejčastěji používá při výrobě salámů?',
     answer: ['Kuřecí', 'Vepřové', 'Hovězí', 'Jehněčí'],
     correctAnswer: 1,
   },
@@ -763,8 +711,9 @@ export const meatData = [
     question: 'Co to jsou fermentované trvanlivé salámy?',
     answer: [
       'Tento druh salámů se už nevyrábí.',
-      'Salámy vyrobené fermentací masa pomocí bakterií, které přeměňují cukry na kyselinu mléčnou, čímž si zachovávají svou trvanlivost.',
-      'Salámy, které prošly fází namáční v alkoholu.',
+      'Salámy vyrobené fermentací masa pomocí bakterií přeměňující cukry na kyselinu mléčnou, čímž si zachovávají svou trvanlivost.',
+      'Salámy, které prošly fází namáčení v alkoholu.',
+      'Salámy, které obsahují alkohol.',
     ],
     correctAnswer: 1,
   },
@@ -807,7 +756,7 @@ export const meatData = [
   },
 
   {
-    question: 'Co je charakterická složka pro výrobu jitrnice?',
+    question: 'Co je charakteristická složka jitrnice?',
     answer: ['Srdce', 'Játra', 'Jazyk', 'Kopýtka'],
     correctAnswer: 1,
   },
@@ -819,7 +768,7 @@ export const meatData = [
   },
 
   {
-    question: 'Co to jsou droby?',
+    question: 'Co jsou droby?',
     answer: [
       'Jsou to malé kousky masa, které jsou tvarovány do kuliček.',
       'Jsou to malé zbytky jedlých a nejedlých částí zvířete.',
@@ -831,7 +780,7 @@ export const meatData = [
 
   {
     question:
-      'Jak se nazývají procesy při výrobě masných výrobků, při kterém dochází k řezání a mělnění masa a promíchávání s dalšími surovinami?',
+      'Jak se nazývají procesy při výrobě masných výrobků, při kterých dochází k řezání a mělnění masa a promíchávání s dalšími surovinami?',
     answer: [
       'Řezání a zamíchání.',
       'Řezání a smíchání.',
@@ -903,7 +852,7 @@ export const meatData = [
 
   {
     question: 'Který z masných výrobků není salám?',
-    answer: ['Herkules', 'Lovečák', 'Uherák', 'Všechny jsou to salámy.'],
+    answer: ['Herkules', 'Lovečák', 'Uherák', 'Všechny jsou salámy.'],
     correctAnswer: 3,
   },
 
@@ -921,33 +870,14 @@ export const meatData = [
   {
     question: 'Proč je důležité jíst maso s nízkým obsahem tuku?',
     answer: [
-      'Protože má lepší chuť.',
-      'Protože pomáhá předcházet obezitě a srdečním chorobám.',
-      'Protože se rychleji připravuje.',
-      'Protože je levnější.',
+      'Má lepší chuť.',
+      'Pomáhá předcházet obezitě a srdečním chorobám.',
+      'Rychleji se připravuje.',
+      'Je levnější.',
     ],
     correctAnswer: 1,
   },
-  {
-    question: 'Jaký je rozdíl mezi čerstvým masem a uzeným masem?',
-    answer: [
-      'Uzené maso má vyšší obsah bílkovin.',
-      'Čerstvé maso je vždy zdravější.',
-      'Uzené maso prošlo procesem uzení, který mu dodává specifickou chuť a konzervuje jej.',
-      'Čerstvé maso má nižší obsah soli.',
-    ],
-    correctAnswer: 2,
-  },
-  {
-    question: 'Proč je důležité omezit konzumaci zpracovaného masa?',
-    answer: [
-      'Protože má méně vitamínů.',
-      'Protože obsahuje konzervanty a může zvyšovat riziko některých nemocí.',
-      'Protože je dražší.',
-      'Protože má nižší obsah bílkovin.',
-    ],
-    correctAnswer: 1,
-  },
+
   {
     question: 'Jaký je hlavní rozdíl mezi bílým a červeným masem?',
     answer: [
@@ -958,66 +888,46 @@ export const meatData = [
     ],
     correctAnswer: 1,
   },
-  {
-    question:
-      'Proč bychom měli jíst maso, které obsahuje omega-3 mastné kyseliny?',
-    answer: [
-      'Protože pomáhá zlepšovat paměť.',
-      'Protože nechutná veganům',
-      'Protože pomáhá udržovat zdravé srdce a cévy.',
-      'Protože snižuje obsah bílkovin.',
-    ],
-    correctAnswer: 2,
-  },
+
   {
     question: 'Jaký je přínos konzumace ryb ve stravě?',
     answer: [
-      'Ryby jsou dobrým zdrojem vitamínu C.',
-      'Ryby pomáhají budovat svalovou hmotu.',
+      'Ryby jsou bohaté na sacharidy.',
+      'Konzumace rybích šupin přináší štěstí.',
       'Ryby jsou bohaté na omega-3 mastné kyseliny a bílkoviny.',
-      'Ryby jsou srandovní.',
+      'Konzumace ryb zlepšují smysl pro humor.',
     ],
     correctAnswer: 2,
   },
   {
     question: 'Proč bychom měli omezit konzumaci slaniny a salámů?',
     answer: [
-      'Protože jsou příliš slané.',
-      'Protože obsahují vysoký podíl nasycených tuků a soli.',
-      'Protože se rychle kazí.',
-      'Protože jsou drahé a hnusné.',
+      'Není důvod je omezovat.',
+      'Obsahují vysoký podíl tuku a soli.',
+      'Rychle se kazí.',
+      'Jsou drahé.',
+    ],
+    correctAnswer: 1,
+  },
+
+  {
+    question: 'Co znamená, když je maso označeno jako "BIO"?',
+    answer: [
+      'Je méně chutné.',
+      'Pochází ze zvířat chovaných za přirozenějších podmínek dle certifikace "BIO".',
+      'Má více tuku.',
+      'Bude rychleji připravené k jídlu.',
     ],
     correctAnswer: 1,
   },
   {
     question:
-      'Proč je důležité jíst maso, které bylo řádně prošetřeno a má certifikaci zdravotní nezávadnosti?',
-    answer: [
-      'Protože takové maso má lepší chuť.',
-      'Protože zabraňuje riziku potravinových infekcí a nemocí.',
-      'Protože je levnější.',
-      'Protože má vyšší obsah bílkovin.',
-    ],
+      'Jaký vitamín se přirozeně nachází ve velkém množství v červeném mase?',
+    answer: ['Vitamín C', 'Vitamín B12', 'Vitamín D', 'Vitamín E'],
     correctAnswer: 1,
   },
   {
-    question: 'Co znamená, když je maso označeno jako "bio"?',
-    answer: [
-      'Že je méně chutné.',
-      'Že pochází ze zvířat chovaných v přirozenějších podmínkách bez použití hormonů a antibiotik.',
-      'Že má více tuku.',
-      'Že je rychleji připravené k jídlu.',
-    ],
-    correctAnswer: 1,
-  },
-  {
-    question:
-      'Jaký vitamin se přirozeně nachází ve velkém množství v červeném mase?',
-    answer: ['Vitamin C', 'Vitamin B12', 'Vitamin D', 'Vitamin E'],
-    correctAnswer: 1,
-  },
-  {
-    question: 'Co je to marinování masa a jaký má vliv?',
+    question: 'Co je marinování masa a jaký má vliv?',
     answer: [
       'Způsob vaření masa, čímž se zvyšuje jeho měkkost.',
       'Proces nakládání masa do solného roztoku, který zvyšuje jeho trvanlivost.',
@@ -1114,7 +1024,7 @@ export const fruitVegData = [
     answer: [
       'Ovoce se míchá s cukrem a poté se z cukru vyndává velkými sýty.',
       'Do ovoce se vstřikuje cukr pomocí specializovaných stříkaček.',
-      'Povařené ovoce je obaleno v několika vrstvách cukru',
+      'Povařené ovoce je obaleno v několika vrstvách cukru.',
       'Povařené ovoce nechá několik dní máčet v cukernatém roztoku.',
     ],
     correctAnswer: 3,
@@ -1130,12 +1040,6 @@ export const fruitVegData = [
     question: 'Které ovoce nepatří mezi citrusy?',
     answer: ['Citrón', 'Pomeranč', 'Pomelo', 'Avokádo'],
     correctAnswer: 3,
-  },
-
-  {
-    question: 'Z jakoho ovoce se nevyrábí povidla?',
-    answer: ['Z meruněk', 'Z broskví', 'Z jablek', 'Ze švestek'],
-    correctAnswer: 1,
   },
 
   {
@@ -1204,8 +1108,8 @@ export const fruitVegData = [
   },
   {
     question:
-      'Jaký vitamin se nachází ve velkém množství v citrusových plodech, jako jsou pomeranče a citrony?',
-    answer: ['Vitamin A', 'Vitamin B12', 'Vitamin C', 'Vitamin D'],
+      'Jaký vitamín se nachází ve velkém množství v citrusových plodech, jako jsou pomeranče a citróny?',
+    answer: ['Vitamín A', 'Vitamín B12', 'Vitamín C', 'Vitamín D'],
     correctAnswer: 2,
   },
   {
@@ -1229,16 +1133,7 @@ export const fruitVegData = [
     ],
     correctAnswer: 2,
   },
-  {
-    question: 'Proč bychom měli jíst různé barvy ovoce a zeleniny?',
-    answer: [
-      'Aby jídlo vypadalo hezky.',
-      'Každá barva představuje různé živiny a zdravotní přínosy.',
-      'Různé barvy mají různé chutě.',
-      'Nemá to žádný význam.',
-    ],
-    correctAnswer: 1,
-  },
+
   {
     question: 'Jaký je hlavní zdravotní přínos jahod a malin?',
     answer: [
@@ -1249,27 +1144,7 @@ export const fruitVegData = [
     ],
     correctAnswer: 2,
   },
-  {
-    question: 'Proč bychom měli omezit příjem ovocných šťáv?',
-    answer: [
-      'Protože jsou kyselé.',
-      'Protože obsahují hodně přidaného cukru a méně vlákniny než celé ovoce.',
-      'Protože jsou drahé.',
-      'Protože způsobují zimnici.',
-    ],
-    correctAnswer: 1,
-  },
-  {
-    question:
-      'Jaký je přínos konzumace tmavě zelené zeleniny, jako je brokolice nebo špenát?',
-    answer: [
-      'Zvyšuje inteligenci.',
-      'Obsahuje vysoké množství železa a vápníku, které jsou důležité pro kosti a krev.',
-      'Sníží riziko nachlazení.',
-      'Pomáhá při hubnutí.',
-    ],
-    correctAnswer: 1,
-  },
+
   {
     question: 'Proč bychom měli jíst banány?',
     answer: [
