@@ -188,7 +188,7 @@
 .vegFruit-btn2 {
   position: absolute;
   left: 48.9%;
-  top: 28.3%;
+  top: 27.3%;
   transform: translate(-50%, -50%);
 }
 
@@ -202,20 +202,20 @@
 .vegFruit-btn4 {
   position: absolute;
   left: 63.2%;
-  top: 51%;
+  top: 49%;
   transform: translate(-50%, -50%);
 }
 
 .vegFruit-btn5 {
   position: absolute;
   left: 45.7%;
-  top: 50.9%;
+  top: 48.9%;
   transform: translate(-50%, -50%);
 }
 
 .vegFruit-btn6 {
   position: absolute;
-  left: 38%;
+  left: 37.5%;
   top: 62.3%;
   transform: translate(-50%, -50%);
 }
@@ -223,7 +223,7 @@
 .vegFruit-btn7 {
   position: absolute;
   left: 38%;
-  top: 73.0%;
+  top: 72.5%;
   transform: translate(-50%, -50%);
 }
 

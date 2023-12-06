@@ -9,6 +9,11 @@ export const ModalLost = ({ close }) => {
     navigate('/fieldPick');
   };
 
+  const closeModalEnd = () => {
+    close(false);
+    navigate('/');
+  };
+
   return (
     <div>
       <div className="modal">
@@ -17,6 +22,9 @@ export const ModalLost = ({ close }) => {
           <div className="close-again">
             <div className="again-btn" onClick={closeModal}>
               Hrát znovu
+            </div>
+            <div className="again-btn" onClick={closeModalEnd}>
+              Konec
             </div>
           </div>
         </div>

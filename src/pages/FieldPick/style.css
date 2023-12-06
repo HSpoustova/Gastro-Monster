@@ -3,11 +3,12 @@
   display: flex;
   justify-content: end;
 }
+
 .pick-field-header {
   color: rgb(0, 0, 0);
   display: flex;
-  align-items: center; 
-  justify-content: center; 
+  align-items: center;
+  justify-content: center;
   width: 450px;
   height: 150px;
   background-image: url(./img/nadpisFieldPick.png);
@@ -16,11 +17,12 @@
   margin: 5px;
   padding-top: 5px;
 }
+
 .container-fieldPick {
   width: 900px;
   height: 600px;
   padding-top: 0px;
-  margin-top: 30px;
+  margin-top: 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -93,14 +95,14 @@
   visibility: visible;
   opacity: 1;
   transition-delay: 0s;
-  background-image: url(./img/nav.png); 
-  background-size: cover; 
-  background-position: center; 
+  background-image: url(./img/nav.png);
+  background-size: cover;
+  background-position: center;
   width: 200px;
-  height: 100px; 
+  height: 100px;
   display: flex;
-  justify-content: center; 
-  align-items: center; 
+  justify-content: center;
+  align-items: center;
 }
 
 .slice1 {
@@ -134,15 +136,15 @@
   right: -20%;
   bottom: 0%;
   transition: right 1s ease-in-out;
-  z-index: 120; 
+  z-index: 120;
 }
 
 .maskot-pic {
-  width: 300px; 
+  width: 300px;
 }
 
 .maskot.active {
-  right: 1px; 
+  right: 1px;
 }
 
 .maskot-text-bubble {
@@ -151,22 +153,40 @@
   background-image: url('./img/textBubble.png');
   background-repeat: no-repeat;
   background-size: contain;
-  position: fixed; 
-  right: 120px; 
-  bottom: 400px; 
+  position: fixed;
+  right: 120px;
+  bottom: 400px;
   display: flex;
-  justify-content: center; 
+  justify-content: center;
   align-items: flex-start;
   font-size: 1.5em;
   padding-top: 30px;
   padding-left: 14px;
   z-index: 119;
-  transition: right 1s ease-in-out; 
+  transition: right 1s ease-in-out;
 }
+
 @keyframes shake {
-  0%, 100% { transform: translateX(0); }
-  10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
-  20%, 40%, 60%, 80% { transform: translateX(10px); }
+
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
 }
 
 .shaking-text {

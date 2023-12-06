@@ -981,10 +981,10 @@ export const fruitVegData = [
   {
     question: 'Co je to fermentace zeleniny?',
     answer: [
-      'Zelenina povaří ve vodě',
-      'Zelenina smíchá se sladidlem',
-      'Zelenina nakládá a kvasí',
-      'Zelenina promíchá s různými kořením',
+      'Zelenina povaří ve vodě.',
+      'Zelenina smíchá se sladidlem.',
+      'Zelenina nakládá a kvasí.',
+      'Zelenina promíchá s různými kořením.',
     ],
     correctAnswer: 2,
   },
