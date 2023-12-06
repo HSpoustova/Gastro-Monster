@@ -43,7 +43,9 @@
   align-items: center;
   padding-bottom: 5px;
 }
-
+.again-btn:hover {
+  opacity: 70%;
+}
 .lost {
   background-image: url(./img/lost.png);
   padding-top: 270px;

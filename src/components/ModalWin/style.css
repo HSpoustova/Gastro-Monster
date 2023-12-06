@@ -43,6 +43,9 @@
   align-items: center;
   padding-bottom: 5px;
 }
+.again-btn:hover {
+ opacity: 70%;
+}
 
 .win {
   background-image: url(./img/win.png);
