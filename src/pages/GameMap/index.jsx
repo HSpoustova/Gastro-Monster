@@ -49,14 +49,13 @@ export const GameMap = ({ data }) => {
     isGameOver,
   } = useEvaluationHook(questionSet, array);
 
-  const currentButtonId = buttons[correctAnswers]?.id || 0;
-  const { isVisible, isTextVisible, text, maskotRef, textRef, maskotImage } =
-    useMaskotMap({
-      delay: 400,
-      currentButtonId,
-      isCorrectAnswer: lastAnswerWasCorrect,
-    });
-  //setAnswer expects index of the answer
+  const currentButtonId = correctAnswers;
+  const { isVisible, isTextVisible, text, maskotImage } = useMaskotMap({
+    delay: 400,
+    currentButtonId,
+    isCorrectAnswer: lastAnswerWasCorrect,
+  });
+
   const selectedAnswer = (selectedAnswerIndex) => {
     const isCorrect = selectedAnswerIndex === questionData.correctAnswer;
     setAnswer(isCorrect);
@@ -74,12 +73,8 @@ export const GameMap = ({ data }) => {
         ></div>
       ) : null}
       <div className="maskot-container">
-        {isTextVisible && (
-          <div ref={textRef} className="maskot-text-bubble">
-            {text}
-          </div>
-        )}
-        <div ref={maskotRef} className={`maskot ${isVisible ? 'active' : ''}`}>
+        {isTextVisible && <div className="maskot-text-bubble">{text}</div>}
+        <div className={`maskot ${isVisible ? 'active' : ''}`}>
           <img className="maskot-pic" src={maskotImage} alt="Maskot" />{' '}
         </div>
       </div>

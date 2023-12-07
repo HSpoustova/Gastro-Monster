@@ -1,19 +1,16 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect } from 'react';
 
 export const useMaskot = ({ delay, textProp }) => {
   const [isVisible, setIsVisible] = useState(false);
   const [isTextVisible, setIsTextVisible] = useState(false);
-  const [isTextShaking, setIsTextShaking] = useState(false); 
-  
-  const maskotRef = useRef(null);
-  const textRef = useRef(null);
+  const [isTextShaking, setIsTextShaking] = useState(false);
 
   useEffect(() => {
     const timerMaskot = setTimeout(() => {
       setIsVisible(true);
     }, delay);
 
-    const textDelay = delay + 1500; 
+    const textDelay = delay + 1500;
     const timerBubble = setTimeout(() => {
       setIsTextVisible(true);
       setIsTextShaking(true); // Zapnout třesení
@@ -26,12 +23,10 @@ export const useMaskot = ({ delay, textProp }) => {
     };
   }, [delay]);
 
-  return { 
-    isVisible, 
-    maskotRef, 
-    isTextVisible, 
-    textRef, 
+  return {
+    isVisible,
+    isTextVisible,
     text: textProp,
-    isTextShaking 
+    isTextShaking,
   };
 };

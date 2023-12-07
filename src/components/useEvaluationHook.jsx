@@ -14,16 +14,14 @@ export const useEvaluationHook = (questionSet, array) => {
   const [answer, setAnswer] = useState(-1);
   //pocatecni stav spravnych odpovedi
   const [correctAnswers, setCorrectAnswers] = useState(0);
-  //stav, ktery znaci, jestli odpovedel
+  //stav, ktery znaci, jestli uzivatel odpovedel
   const [answered, setAnswered] = useState(false);
-
+  //stav, ktery upravuje, jaky modal se ma otevrit
   const [isGameOver, setIsGameOver] = useState('question');
 
-  //definovani funkce, zda vyhral (musi byt definovano, nez pouzijeme), vraci true false
   const checkHasWon = (updatedCorrect) => {
     return updatedCorrect === 10;
   };
-  //definovani podminky, zda prohral (musi byt definovano, nez pouzijeme) vraci true nebo false
   const checkHasLost = () => {
     let extraFood = food - (10 - correctAnswers) - 1;
     if (extraFood >= 0) {
@@ -31,25 +29,11 @@ export const useEvaluationHook = (questionSet, array) => {
     }
     return true;
   };
-  //obnoveni nove otazky
   const updateQuestionData = () => {
     setQuestionData(array[GetRandomObject(questionSet)]);
   };
 
-  /* Hook obdrzi index, 
-  - nastavi, ze uzivatel odpovedel, 
-  - resetuje promennou answer
-  - pripocita +1 k tomu, kolik otazek uz bylo polozeno
-  - odecte potravinu
-  - pokud odpoved byla spravna, pricte +1 ke spravnym odpovedim
-  - vyhodnoti hasWon, hasLost podle podminek definovanych nahore
-  - obnovi stranku */
-
   const handleAnswer = (status) => {
-    // Pokud hra skončila, nebudeme pokračovat v nastavování dalších otázek - zbytečný, pokud dostávám odpověď, hra běží
-    /*if (isGameOver !== 'question') {
-      return;
-    }*/
 
     setAnswered(true);
     setAnswer(-1);

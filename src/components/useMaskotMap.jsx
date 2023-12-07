@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect } from 'react';
 import MaskotEggHappy from './Modal/img/maskot-egg-happy.png';
 import MaskotTeenHappy from './Modal/img/maskot-teen-happy.png';
 import MaskotAdultHappy from './Modal/img/maskot-adult-happy.png';
@@ -22,18 +22,18 @@ const textyOtazek = [
   'Juchůů!',
 ];
 const textySpatnychOdpovedi = [
-  'To je špatně..',
+  'To je špatně.',
   'Jsem chudinka!',
   'Tak dlouho bez jídla.',
   'Ach jo..',
   'Neee!',
-  'Makovče!',
+  'Žádné jídlo.',
   'Chci jíst!',
   'Břísko kručí!',
   'Oprav se.',
   'Umíram hlady!',
   'Bude někdy jídlo?',
-  'Troubo',
+  'Mám hlad!',
 ];
 
 export const useMaskotMap = ({ delay, currentButtonId, isCorrectAnswer }) => {
@@ -41,9 +41,6 @@ export const useMaskotMap = ({ delay, currentButtonId, isCorrectAnswer }) => {
   const [isTextVisible, setIsTextVisible] = useState(false);
   const [maskotImage, setMaskotImage] = useState(MaskotEggHappy);
   const [maskotText, setMaskotText] = useState(textyOtazek[0]);
-
-  const maskotRef = useRef(null);
-  const textRef = useRef(null);
 
   useEffect(() => {
     const timerMaskot = setTimeout(() => {
@@ -110,9 +107,7 @@ export const useMaskotMap = ({ delay, currentButtonId, isCorrectAnswer }) => {
 
   return {
     isVisible,
-    maskotRef,
     isTextVisible,
-    textRef,
     text: maskotText,
     maskotImage,
   };

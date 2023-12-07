@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { GetRandomObject } from './GetRandomObject';
 
-//Nastavuje 15 nahodnych indexu z pole
 export const useQuestionHook = (questionsData) => {
   const questionIndex = questionsData.map((value, index) => {
     return index;

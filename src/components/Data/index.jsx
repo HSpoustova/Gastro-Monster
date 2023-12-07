@@ -931,7 +931,7 @@ export const meatData = [
     answer: [
       'Způsob vaření masa, čímž se zvyšuje jeho měkkost.',
       'Proces nakládání masa do solného roztoku, který zvyšuje jeho trvanlivost.',
-      'Proces namáčení masa v směsi koření a oleje, což zlepšuje chuť a šťavnatost.',
+      'Proces namáčení masa ve směsi koření a oleje, což zlepšuje chuť a šťavnatost.',
       'Způsob mražení masa, který zabraňuje jeho zkáze.',
     ],
     correctAnswer: 2,
@@ -1025,7 +1025,7 @@ export const fruitVegData = [
       'Ovoce se míchá s cukrem a poté se z cukru vyndává velkými sýty.',
       'Do ovoce se vstřikuje cukr pomocí specializovaných stříkaček.',
       'Povařené ovoce je obaleno v několika vrstvách cukru.',
-      'Povařené ovoce nechá několik dní máčet v cukernatém roztoku.',
+      'Povařené ovoce se nechá několik dní máčet v cukernatém roztoku.',
     ],
     correctAnswer: 3,
   },

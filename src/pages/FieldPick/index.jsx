@@ -1,12 +1,12 @@
+import './style.css';
 import { Link } from 'react-router-dom';
 import { useMaskot } from '../../components/useMaskot';
-import './style.css';
 import maskotAdultNeutral from './img/maskot-adult-neutral.png';
 import { Button } from '../../components/Button';
 import button from './img/button.png';
 
 export const FieldPick = () => {
-  const { isVisible, isTextVisible, text, maskotRef, textRef, isTextShaking } = useMaskot({
+  const { isVisible, isTextVisible, text, isTextShaking } = useMaskot({
     delay: 400,
     textProp: 'Mám hlad!',
   });
@@ -39,7 +39,6 @@ export const FieldPick = () => {
         <div className="maskot-container">
           {isTextVisible && (
             <div
-              ref={textRef}
               className={`maskot-text-bubble ${
                 isTextShaking ? 'shaking-text' : ''
               }`}
@@ -47,10 +46,7 @@ export const FieldPick = () => {
               {text}
             </div>
           )}
-          <div
-            ref={maskotRef}
-            className={`maskot ${isVisible ? 'active' : ''}`}
-          >
+          <div className={`maskot ${isVisible ? 'active' : ''}`}>
             <img className="maskot-pic" src={maskotAdultNeutral} alt="Maskot" />
           </div>
         </div>
