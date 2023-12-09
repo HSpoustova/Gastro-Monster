@@ -10,7 +10,7 @@ import MaskotBabySad from './Modal/img/maskot-baby-sad.png';
 import MaskotEggNeutral from './Modal/img/maskot-egg-neutral.png';
 
 const textyOtazek = [
-  'Hladovím...',
+  'Klini na mě na mapě!',
   'Mňam mňam..',
   'Ty jsi šikula!',
   'Zase plné bříško!',
